@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34F6020914DF1D27005DB8A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F6020814DF1D27005DB8A9 /* UIKit.framework */; };
+		34F6020B14DF1D27005DB8A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F6020A14DF1D27005DB8A9 /* Foundation.framework */; };
+		34F6020D14DF1D27005DB8A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F6020C14DF1D27005DB8A9 /* CoreGraphics.framework */; };
+		34F6021314DF1D27005DB8A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34F6021114DF1D27005DB8A9 /* InfoPlist.strings */; };
+		34F6021514DF1D27005DB8A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F6021414DF1D27005DB8A9 /* main.m */; };
+		34F6021914DF1D27005DB8A9 /* comAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F6021814DF1D27005DB8A9 /* comAppDelegate.m */; };
+		34F6021C14DF1D27005DB8A9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F6021A14DF1D27005DB8A9 /* MainStoryboard_iPhone.storyboard */; };
+		34F6021F14DF1D27005DB8A9 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F6021D14DF1D27005DB8A9 /* MainStoryboard_iPad.storyboard */; };
+		34F6022214DF1D27005DB8A9 /* comViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F6022114DF1D27005DB8A9 /* comViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		34F6020414DF1D27005DB8A9 /* RockRadioCas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockRadioCas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34F6020814DF1D27005DB8A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		34F6020A14DF1D27005DB8A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		34F6020C14DF1D27005DB8A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		34F6021014DF1D27005DB8A9 /* RockRadioCas-Info.plist */ = {isa = PBXFileReference; path = "RockRadioCas-Info.plist"; sourceTree = "<group>"; };
+		34F6021214DF1D27005DB8A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		34F6021414DF1D27005DB8A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		34F6021614DF1D27005DB8A9 /* RockRadioCas-Prefix.pch */ = {isa = PBXFileReference; path = "RockRadioCas-Prefix.pch"; sourceTree = "<group>"; };
+		34F6021714DF1D27005DB8A9 /* comAppDelegate.h */ = {isa = PBXFileReference; path = comAppDelegate.h; sourceTree = "<group>"; };
+		34F6021814DF1D27005DB8A9 /* comAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = comAppDelegate.m; sourceTree = "<group>"; };
+		34F6021B14DF1D27005DB8A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		34F6021E14DF1D27005DB8A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		34F6022014DF1D27005DB8A9 /* comViewController.h */ = {isa = PBXFileReference; path = comViewController.h; sourceTree = "<group>"; };
+		34F6022114DF1D27005DB8A9 /* comViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = comViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34F6020114DF1D27005DB8A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34F6020914DF1D27005DB8A9 /* UIKit.framework in Frameworks */,
+				34F6020B14DF1D27005DB8A9 /* Foundation.framework in Frameworks */,
+				34F6020D14DF1D27005DB8A9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34F601F914DF1D27005DB8A9 = {
+			isa = PBXGroup;
+			children = (
+				34F6020E14DF1D27005DB8A9 /* RockRadioCas */,
+				34F6020714DF1D27005DB8A9 /* Frameworks */,
+				34F6020514DF1D27005DB8A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		34F6020514DF1D27005DB8A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34F6020414DF1D27005DB8A9 /* RockRadioCas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34F6020714DF1D27005DB8A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34F6020814DF1D27005DB8A9 /* UIKit.framework */,
+				34F6020A14DF1D27005DB8A9 /* Foundation.framework */,
+				34F6020C14DF1D27005DB8A9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34F6020E14DF1D27005DB8A9 /* RockRadioCas */ = {
+			isa = PBXGroup;
+			children = (
+				34F6021714DF1D27005DB8A9 /* comAppDelegate.h */,
+				34F6021814DF1D27005DB8A9 /* comAppDelegate.m */,
+				34F6021A14DF1D27005DB8A9 /* MainStoryboard_iPhone.storyboard */,
+				34F6021D14DF1D27005DB8A9 /* MainStoryboard_iPad.storyboard */,
+				34F6022014DF1D27005DB8A9 /* comViewController.h */,
+				34F6022114DF1D27005DB8A9 /* comViewController.m */,
+				34F6020F14DF1D27005DB8A9 /* Supporting Files */,
+			);
+			path = RockRadioCas;
+			sourceTree = "<group>";
+		};
+		34F6020F14DF1D27005DB8A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				34F6021014DF1D27005DB8A9 /* RockRadioCas-Info.plist */,
+				34F6021114DF1D27005DB8A9 /* InfoPlist.strings */,
+				34F6021414DF1D27005DB8A9 /* main.m */,
+				34F6021614DF1D27005DB8A9 /* RockRadioCas-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34F6020314DF1D27005DB8A9 /* RockRadioCas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34F6022514DF1D27005DB8A9 /* Build configuration list for PBXNativeTarget "RockRadioCas" */;
+			buildPhases = (
+				34F6020014DF1D27005DB8A9 /* Sources */,
+				34F6020114DF1D27005DB8A9 /* Frameworks */,
+				34F6020214DF1D27005DB8A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RockRadioCas;
+			productName = RockRadioCas;
+			productReference = 34F6020414DF1D27005DB8A9 /* RockRadioCas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34F601FB14DF1D27005DB8A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 34F601FE14DF1D27005DB8A9 /* Build configuration list for PBXProject "RockRadioCas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 34F601F914DF1D27005DB8A9;
+			productRefGroup = 34F6020514DF1D27005DB8A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34F6020314DF1D27005DB8A9 /* RockRadioCas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34F6020214DF1D27005DB8A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34F6021314DF1D27005DB8A9 /* InfoPlist.strings in Resources */,
+				34F6021C14DF1D27005DB8A9 /* MainStoryboard_iPhone.storyboard in Resources */,
+				34F6021F14DF1D27005DB8A9 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34F6020014DF1D27005DB8A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34F6021514DF1D27005DB8A9 /* main.m in Sources */,
+				34F6021914DF1D27005DB8A9 /* comAppDelegate.m in Sources */,
+				34F6022214DF1D27005DB8A9 /* comViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		34F6021114DF1D27005DB8A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34F6021214DF1D27005DB8A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		34F6021A14DF1D27005DB8A9 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34F6021B14DF1D27005DB8A9 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		34F6021D14DF1D27005DB8A9 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34F6021E14DF1D27005DB8A9 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34F6022314DF1D27005DB8A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34F6022414DF1D27005DB8A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34F6022614DF1D27005DB8A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RockRadioCas/RockRadioCas-Prefix.pch";
+				INFOPLIST_FILE = "RockRadioCas/RockRadioCas-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		34F6022714DF1D27005DB8A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RockRadioCas/RockRadioCas-Prefix.pch";
+				INFOPLIST_FILE = "RockRadioCas/RockRadioCas-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34F601FE14DF1D27005DB8A9 /* Build configuration list for PBXProject "RockRadioCas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34F6022314DF1D27005DB8A9 /* Debug */,
+				34F6022414DF1D27005DB8A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34F6022514DF1D27005DB8A9 /* Build configuration list for PBXNativeTarget "RockRadioCas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34F6022614DF1D27005DB8A9 /* Debug */,
+				34F6022714DF1D27005DB8A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34F601FB14DF1D27005DB8A9 /* Project object */;
+}
