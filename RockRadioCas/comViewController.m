@@ -1,6 +1,7 @@
 #import "comViewController.h"
 
 #import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 NSString *kTracksKey		= @"tracks";
 NSString *kStatusKey		= @"status";
@@ -115,68 +116,12 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
     [super viewDidLoad];
     
     // init prehravace
-    NSURL *newMovieURL = [NSURL URLWithString:@"http://icecast1.play.cz:8000/casrock32aac"];
-    if ([newMovieURL scheme])	/* Sanity check on the URL. */
-    {
-        /*
-         Create an asset for inspection of a resource referenced by a given URL.
-         Load the values for the asset keys "tracks", "playable".
-         */
-        AVURLAsset *asset = [AVURLAsset URLAssetWithURL:newMovieURL options:nil];
-        
-        NSArray *requestedKeys = [NSArray arrayWithObjects:kTracksKey, kPlayableKey, nil];
-        
-        /* Tells the asset to load the values of any of the specified keys that are not already loaded. */
-        [asset loadValuesAsynchronouslyForKeys:requestedKeys completionHandler:
-         ^{		 
-             dispatch_async( dispatch_get_main_queue(), 
-                            ^{
-                                /* IMPORTANT: Must dispatch to main queue in order to operate on the AVPlayer and AVPlayerItem. */
-                                [self prepareToPlayAsset:asset withKeys:requestedKeys];
-                            });
-         }];
-    }  
     
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation 
-{
-    /* Supports all orientations. */
-    return YES;
-}
-
-- (void)handleSwipe:(UISwipeGestureRecognizer *)gestureRecognizer
-{
-	UIView* view = [self view];
-	UISwipeGestureRecognizerDirection direction = [gestureRecognizer direction];
-	CGPoint location = [gestureRecognizer locationInView:view];
-	
-	if (location.y < CGRectGetMidY([view bounds]))
-	{
-		if (direction == UISwipeGestureRecognizerDirectionUp)
-		{
-			[UIView animateWithDuration:0.2f animations:
-             ^{
-                 [[self navigationController] setNavigationBarHidden:YES animated:YES];
-             } completion:
-             ^(BOOL finished)
-             {
-                 [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
-             }];
-		}
-		if (direction == UISwipeGestureRecognizerDirectionDown)
-		{
-			[UIView animateWithDuration:0.2f animations:
-             ^{
-                 [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationSlide];
-             } completion:
-             ^(BOOL finished)
-             {
-                 [[self navigationController] setNavigationBarHidden:NO animated:YES];
-             }];
-		}
-	}
+    NSString *u = @"http://icecast1.play.cz:8000/casrock32aac";
     
+    NSURL *url = [NSURL URLWithString:u];
+    
+    player = [[AVPlayer alloc] initWithURL:url];    
 }
 
 - (void)dealloc

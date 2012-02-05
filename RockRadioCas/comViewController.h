@@ -7,8 +7,7 @@
 //
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
-#import <CoreMedia/CoreMedia.h>
-
+#import <AudioToolbox/AudioToolbox.h>
 
 @class AVPlayer;
 @class AVPlayerItem;
