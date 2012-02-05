@@ -1,18 +1,6 @@
-//
-//  comViewController.m
-//  RockRadioCas
-//
-//  Created by Jan Damek on /52/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
-
 #import "comViewController.h"
-#import <AVFoundation/AVFoundation.h>
 
-static void *MyStreamingMovieViewControllerTimedMetadataObserverContext = &MyStreamingMovieViewControllerTimedMetadataObserverContext;
-static void *MyStreamingMovieViewControllerRateObservationContext = &MyStreamingMovieViewControllerRateObservationContext;
-static void *MyStreamingMovieViewControllerCurrentItemObservationContext = &MyStreamingMovieViewControllerCurrentItemObservationContext;
-static void *MyStreamingMovieViewControllerPlayerItemStatusObserverContext = &MyStreamingMovieViewControllerPlayerItemStatusObserverContext;
+#import <AVFoundation/AVFoundation.h>
 
 NSString *kTracksKey		= @"tracks";
 NSString *kStatusKey		= @"status";
@@ -24,8 +12,6 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
 #pragma mark -
 @interface comViewController (Player)
 - (BOOL)isPlaying;
-- (void)handleTimedMetadata:(AVMetadataItem*)timedMetadata;
-- (void)updateAdList:(NSArray *)newAdList;
 - (void)assetFailedToPrepareForPlayback:(NSError *)error;
 - (void)prepareToPlayAsset:(AVURLAsset *)asset withKeys:(NSArray *)requestedKeys;
 @end
@@ -36,65 +22,302 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
 @synthesize isPlayingAdText;
 @synthesize playButton, stopButton;
 
-- (void)didReceiveMemoryWarning
+#pragma mark -
+#pragma mark Movie controller methods
+#pragma mark -
+
+/* ---------------------------------------------------------
+ **  Methods to handle manipulation of the movie scrubber control
+ ** ------------------------------------------------------- */
+
+#pragma mark Play, Stop Buttons
+
+/* Show the stop button in the movie player controller. */
+-(void)showStopButton
 {
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
+    //    NSMutableArray *toolbarItems = [NSMutableArray arrayWithArray:[toolBar items]];
+    //    [toolbarItems replaceObjectAtIndex:0 withObject:stopButton];
+    //    toolBar.items = toolbarItems;
+    playButton.hidden = YES;
+    stopButton.hidden = NO;
 }
 
-#pragma mark - View lifecycle
-
-- (void)viewDidLoad
+/* Show the play button in the movie player controller. */
+-(void)showPlayButton
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    //    NSMutableArray *toolbarItems = [NSMutableArray arrayWithArray:[toolBar items]];
+    //    [toolbarItems replaceObjectAtIndex:0 withObject:playButton];
+    //    toolBar.items = toolbarItems;
+    playButton.hidden = NO;
+    stopButton.hidden = YES;
 }
+
+/* If the media is playing, show the stop button; otherwise, show the play button. */
+- (void)syncPlayPauseButtons
+{
+	if ([self isPlaying])
+	{
+        [self showStopButton];
+	}
+	else
+	{
+        [self showPlayButton];        
+	}
+}
+
+-(void)enablePlayerButtons
+{
+    self.playButton.enabled = YES;
+    self.stopButton.enabled = YES;
+}
+
+-(void)disablePlayerButtons
+{
+    self.playButton.enabled = NO;
+    self.stopButton.enabled = NO;
+}
+
+#pragma mark Scrubber control
+
+#pragma mark Button Action Methods
+
+- (IBAction)play:(id)sender
+{  
+	[player play];
+	
+    [self showStopButton];  
+}
+
+- (IBAction)pause:(id)sender
+{
+	[player pause];
+    
+    [self showPlayButton];
+}
+
+#pragma mark -
+#pragma mark View Controller
+#pragma mark -
 
 - (void)viewDidUnload
 {
+    
+    self.playButton = nil;
+    self.stopButton = nil;
+    self.isPlayingAdText = nil;
+    
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
+- (void)viewDidLoad
+{    
+  
+    [super viewDidLoad];
+    
+    // init prehravace
+    NSURL *newMovieURL = [NSURL URLWithString:@"http://icecast1.play.cz:8000/casrock32aac"];
+    if ([newMovieURL scheme])	/* Sanity check on the URL. */
+    {
+        /*
+         Create an asset for inspection of a resource referenced by a given URL.
+         Load the values for the asset keys "tracks", "playable".
+         */
+        AVURLAsset *asset = [AVURLAsset URLAssetWithURL:newMovieURL options:nil];
+        
+        NSArray *requestedKeys = [NSArray arrayWithObjects:kTracksKey, kPlayableKey, nil];
+        
+        /* Tells the asset to load the values of any of the specified keys that are not already loaded. */
+        [asset loadValuesAsynchronouslyForKeys:requestedKeys completionHandler:
+         ^{		 
+             dispatch_async( dispatch_get_main_queue(), 
+                            ^{
+                                /* IMPORTANT: Must dispatch to main queue in order to operate on the AVPlayer and AVPlayerItem. */
+                                [self prepareToPlayAsset:asset withKeys:requestedKeys];
+                            });
+         }];
+    }  
+    
 }
 
-- (void)viewDidAppear:(BOOL)animated
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation 
 {
-    [super viewDidAppear:animated];
+    /* Supports all orientations. */
+    return YES;
 }
 
-- (void)viewWillDisappear:(BOOL)animated
+- (void)handleSwipe:(UISwipeGestureRecognizer *)gestureRecognizer
 {
-	[super viewWillDisappear:animated];
+	UIView* view = [self view];
+	UISwipeGestureRecognizerDirection direction = [gestureRecognizer direction];
+	CGPoint location = [gestureRecognizer locationInView:view];
+	
+	if (location.y < CGRectGetMidY([view bounds]))
+	{
+		if (direction == UISwipeGestureRecognizerDirectionUp)
+		{
+			[UIView animateWithDuration:0.2f animations:
+             ^{
+                 [[self navigationController] setNavigationBarHidden:YES animated:YES];
+             } completion:
+             ^(BOOL finished)
+             {
+                 [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
+             }];
+		}
+		if (direction == UISwipeGestureRecognizerDirectionDown)
+		{
+			[UIView animateWithDuration:0.2f animations:
+             ^{
+                 [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationSlide];
+             } completion:
+             ^(BOOL finished)
+             {
+                 [[self navigationController] setNavigationBarHidden:NO animated:YES];
+             }];
+		}
+	}
+    
 }
 
-- (void)viewDidDisappear:(BOOL)animated
+- (void)dealloc
 {
-	[super viewDidDisappear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:AVPlayerItemDidPlayToEndTimeNotification
+                                                  object:nil];
+    [self.player removeObserver:self forKeyPath:kCurrentItemKey];
+    [self.player removeObserver:self forKeyPath:kTimedMetadataKey];
+    [self.player removeObserver:self forKeyPath:kRateKey];
+//	[player release]; 
+//	[adList release];
+	
+//	[playButton release];
+//	[stopButton release];
+//	[isPlayingAdText release];
+	
+//    [super dealloc];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+@end
+
+@implementation comViewController (Player)
+
+#pragma mark -
+
+#pragma mark Player
+
+- (BOOL)isPlaying
 {
-    // Return YES for supported orientations
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-    } else {
-        return YES;
+	return [player rate] != 0.f;
+}
+
+#pragma mark Player Notifications
+
+/* Called when the player item has played to its end time. */
+- (void) playerItemDidReachEnd:(NSNotification*) aNotification 
+{
+	/* Hide the 'Pause' button, show the 'Play' button in the slider control */
+    [self showPlayButton];
+    
+}
+
+
+-(void)assetFailedToPrepareForPlayback:(NSError *)error
+{
+    
+    [self disablePlayerButtons];
+    
+    /* Display the error. */
+	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:[error localizedDescription]
+														message:[error localizedFailureReason]
+													   delegate:nil
+											  cancelButtonTitle:@"OK"
+											  otherButtonTitles:nil];
+	[alertView show];
+//	[alertView release];
+}
+
+- (void)prepareToPlayAsset:(AVURLAsset *)asset withKeys:(NSArray *)requestedKeys
+{
+    /* Make sure that the value of each key has loaded successfully. */
+	for (NSString *thisKey in requestedKeys)
+	{
+		NSError *error = nil;
+		AVKeyValueStatus keyStatus = [asset statusOfValueForKey:thisKey error:&error];
+		if (keyStatus == AVKeyValueStatusFailed)
+		{
+			[self assetFailedToPrepareForPlayback:error];
+			return;
+		}
+		/* If you are also implementing the use of -[AVAsset cancelLoading], add your code here to bail 
+         out properly in the case of cancellation. */
+	}
+    
+    /* Use the AVAsset playable property to detect whether the asset can be played. */
+    if (!asset.playable) 
+    {
+        /* Generate an error describing the failure. */
+		NSString *localizedDescription = NSLocalizedString(@"Item cannot be played", @"Item cannot be played description");
+		NSString *localizedFailureReason = NSLocalizedString(@"The assets tracks were loaded, but could not be made playable.", @"Item cannot be played failure reason");
+		NSDictionary *errorDict = [NSDictionary dictionaryWithObjectsAndKeys:
+								   localizedDescription, NSLocalizedDescriptionKey, 
+								   localizedFailureReason, NSLocalizedFailureReasonErrorKey, 
+								   nil];
+		NSError *assetCannotBePlayedError = [NSError errorWithDomain:@"StitchedStreamPlayer" code:0 userInfo:errorDict];
+        
+        /* Display the error to the user. */
+        [self assetFailedToPrepareForPlayback:assetCannotBePlayedError];
+        
+        return;
     }
-}
-
-- (IBAction)play:(id)sender;
-{
+	
+	/* At this point we're ready to set up for playback of the asset. */
+    
+	[self enablePlayerButtons];
+	
+    /* Stop observing our prior AVPlayerItem, if we have one. */
+    if (self.playerItem)
+    {
+        /* Remove existing player item key value observers and notifications. */
+        
+        [self.playerItem removeObserver:self forKeyPath:kStatusKey];            
+		
+        [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                        name:AVPlayerItemDidPlayToEndTimeNotification
+                                                      object:self.playerItem];
+    }
+	
+    /* Create a new instance of AVPlayerItem from the now successfully loaded AVAsset. */
+    self.playerItem = [AVPlayerItem playerItemWithAsset:asset];
+    	
+    /* When the player item has played to its end time we'll toggle
+     the movie controller Pause button to be the Play button */
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(playerItemDidReachEnd:)
+                                                 name:AVPlayerItemDidPlayToEndTimeNotification
+                                               object:self.playerItem];
+	
+	
+    /* Create new player, if we don't already have one. */
+    if (![self player])
+    {
+        /* Get a new AVPlayer initialized to play the specified player item. */
+        [self setPlayer:[AVPlayer playerWithPlayerItem:self.playerItem]];	
+		
+              
+    }
+    
+    /* Make our new AVPlayerItem the AVPlayer's current item. */
+    if (self.player.currentItem != self.playerItem)
+    {
+        /* Replace the player item with a new player item. The item replacement occurs 
+         asynchronously; observe the currentItem property to find out when the 
+         replacement will/did occur*/
+        [[self player] replaceCurrentItemWithPlayerItem:self.playerItem];
+        
+        [self syncPlayPauseButtons];
+    }
     
 }
 
-- (IBAction)pause:(id)sender;
-{
-    
-}
 
 @end

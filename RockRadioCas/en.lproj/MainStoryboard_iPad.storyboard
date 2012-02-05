@@ -13,47 +13,47 @@
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" contentMode="center" image="Default.png" id="DGI-sa-1BM">
+                                <rect key="frame" x="224" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="320x480_portrait_07.png" id="DoC-AX-ctt">
-                                <rect key="frame" x="0.0" y="210" width="768" height="1004"/>
+                                <rect key="frame" x="351.5" y="414.5" width="65" height="65"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="320x480_portrait_06_press.png" id="RmT-XJ-S1z">
-                                <rect key="frame" x="-64" y="210" width="768" height="1004"/>
+                                <rect key="frame" x="287.5" y="414.5" width="65" height="65"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="320x480_portrait_08_press.png" id="dWs-Hq-px9">
-                                <rect key="frame" x="64" y="210" width="768" height="1004"/>
+                                <rect key="frame" x="415.5" y="414.5" width="65" height="65"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="320x480_portrait_09.png" id="5j0-82-7yK">
-                                <rect key="frame" x="128" y="210" width="768" height="1004"/>
+                                <rect key="frame" x="479.5" y="414.5" width="65" height="65"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="320x480_portrait_08.png" id="oR2-ez-qnh">
-                                <rect key="frame" x="64" y="210" width="768" height="1004"/>
+                                <rect key="frame" x="415.5" y="414.5" width="65" height="65"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="320x480_portrait_06.png" id="5ty-re-yOW">
-                                <rect key="frame" x="-64" y="210" width="768" height="1004"/>
+                                <rect key="frame" x="287.5" y="414.5" width="65" height="65"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="320x480_portrait_07_press.png" id="V6T-h0-3fF">
-                                <rect key="frame" x="0.0" y="210" width="768" height="1004"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Default-Portrait~ipad.png" id="DGI-sa-1BM">
-                                <rect key="frame" x="158" y="-129" width="768" height="742"/>
+                                <rect key="frame" x="351.5" y="414.5" width="65" height="65"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" minimumFontSize="10" id="LXY-9Y-0pj" userLabel="Ad is playing">
-                                <rect key="frame" x="32" y="408" width="420" height="50"/>
+                                <rect key="frame" x="69" y="477" width="420" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Art-lW-qI8">
-                                <rect key="frame" x="224" y="680" width="64" height="65"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Art-lW-qI8" userLabel="stopButton">
+                                <rect key="frame" x="223" y="414.5" width="66" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="320x480_portrait_05.png">
@@ -64,11 +64,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="play:" destination="2" eventType="touchDown" id="fAm-Rm-PqX"/>
+                                    <action selector="pause:" destination="2" eventType="touchDown" id="2Te-PF-ETY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cMs-4H-YI3">
-                                <rect key="frame" x="224" y="680" width="64" height="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cMs-4H-YI3" userLabel="playButton">
+                                <rect key="frame" x="223" y="414.5" width="66" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="320x480_portrait_05_play.png">
@@ -79,16 +79,20 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="pause:" destination="2" eventType="touchDown" id="v9z-QQ-K3u"/>
+                                    <action selector="play:" destination="2" eventType="touchDown" id="vCY-nr-See"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="isPlayingAdText" destination="LXY-9Y-0pj" id="cJx-r9-Ard"/>
-                        <outlet property="playButton" destination="Art-lW-qI8" id="Wjl-LF-FHW"/>
-                        <outlet property="stopButton" destination="cMs-4H-YI3" id="B27-lP-n6P"/>
+                        <outlet property="playButton" destination="cMs-4H-YI3" id="Ias-Wh-5NS"/>
+                        <outlet property="stopButton" destination="Art-lW-qI8" id="1gX-CH-XYb"/>
                     </connections>
                 </viewController>
             </objects>
@@ -105,7 +109,7 @@
         <image name="320x480_portrait_08.png" width="64" height="64"/>
         <image name="320x480_portrait_08_press.png" width="64" height="64"/>
         <image name="320x480_portrait_09.png" width="64" height="64"/>
-        <image name="Default-Portrait~ipad.png" width="815" height="512"/>
+        <image name="Default.png" width="320" height="480"/>
     </resources>
     <classes>
         <class className="comViewController" superclassName="UIViewController">

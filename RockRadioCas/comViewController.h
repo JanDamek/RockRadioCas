@@ -15,7 +15,8 @@
 
 @interface comViewController : UIViewController {
     
-	AVPlayer *player;
+    
+    AVPlayer *player;
     AVPlayerItem *playerItem;
     
     UIButton *playButton;
@@ -32,6 +33,7 @@
 
 @property (retain) AVPlayer *player;
 @property (retain) AVPlayerItem *playerItem;
+
 @property (retain) IBOutlet UILabel *isPlayingAdText;
 
 - (IBAction)play:(id)sender;
