@@ -7,8 +7,34 @@
 //
 
 #import "comViewController.h"
+#import <AVFoundation/AVFoundation.h>
+
+static void *MyStreamingMovieViewControllerTimedMetadataObserverContext = &MyStreamingMovieViewControllerTimedMetadataObserverContext;
+static void *MyStreamingMovieViewControllerRateObservationContext = &MyStreamingMovieViewControllerRateObservationContext;
+static void *MyStreamingMovieViewControllerCurrentItemObservationContext = &MyStreamingMovieViewControllerCurrentItemObservationContext;
+static void *MyStreamingMovieViewControllerPlayerItemStatusObserverContext = &MyStreamingMovieViewControllerPlayerItemStatusObserverContext;
+
+NSString *kTracksKey		= @"tracks";
+NSString *kStatusKey		= @"status";
+NSString *kRateKey			= @"rate";
+NSString *kPlayableKey		= @"playable";
+NSString *kCurrentItemKey	= @"currentItem";
+NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
+
+#pragma mark -
+@interface comViewController (Player)
+- (BOOL)isPlaying;
+- (void)handleTimedMetadata:(AVMetadataItem*)timedMetadata;
+- (void)updateAdList:(NSArray *)newAdList;
+- (void)assetFailedToPrepareForPlayback:(NSError *)error;
+- (void)prepareToPlayAsset:(AVURLAsset *)asset withKeys:(NSArray *)requestedKeys;
+@end
 
 @implementation comViewController
+
+@synthesize player, playerItem;
+@synthesize isPlayingAdText;
+@synthesize playButton, stopButton;
 
 - (void)didReceiveMemoryWarning
 {
@@ -59,6 +85,16 @@
     } else {
         return YES;
     }
+}
+
+- (IBAction)play:(id)sender;
+{
+    
+}
+
+- (IBAction)pause:(id)sender;
+{
+    
 }
 
 @end
