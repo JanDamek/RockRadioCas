@@ -14,50 +14,50 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Default.png" id="XZ4-YF-NSn">
-                                <rect key="frame" x="0.0" y="-13" width="320" height="486"/>
+                                <rect key="frame" x="0.0" y="-19" width="320" height="486"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="320x480_portrait_07.png" id="lOx-tg-tyQ">
-                                <rect key="frame" x="128" y="406" width="64" height="64"/>
+                                <rect key="frame" x="128" y="396" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="320x480_portrait_06_press.png" id="6K0-mk-vUC">
-                                <rect key="frame" x="64" y="406" width="64" height="64"/>
+                                <rect key="frame" x="64" y="396" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="320x480_portrait_08_press.png" id="pUT-5p-mx8">
-                                <rect key="frame" x="192" y="406" width="64" height="64"/>
+                                <rect key="frame" x="192" y="396" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="320x480_portrait_09.png" id="8Yu-dF-fTu">
-                                <rect key="frame" x="256" y="406" width="64" height="64"/>
+                                <rect key="frame" x="256" y="396" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="320x480_portrait_08.png" id="8hF-eE-UGQ">
-                                <rect key="frame" x="192" y="406" width="64" height="64"/>
+                                <rect key="frame" x="192" y="396" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="320x480_portrait_06.png" id="1Ct-jQ-oJk">
-                                <rect key="frame" x="64" y="406" width="64" height="64"/>
+                                <rect key="frame" x="64" y="396" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="320x480_portrait_07_press.png" id="T8R-L6-vLE">
-                                <rect key="frame" x="128" y="406" width="64" height="64"/>
+                                <rect key="frame" x="128" y="396" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="320x480_portrait_05.png" id="8H1-KV-xrp">
-                                <rect key="frame" x="0.0" y="406" width="64" height="64"/>
+                                <rect key="frame" x="0.0" y="396" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" minimumFontSize="10" id="8JU-DT-hWA" userLabel="Ad is playing">
-                                <rect key="frame" x="32" y="264" width="257" height="37"/>
+                                <rect key="frame" x="32" y="256" width="257" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="X7c-nS-IyL">
-                                <rect key="frame" x="0.0" y="406" width="64" height="64"/>
+                                <rect key="frame" x="0.0" y="396" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="320x480_portrait_05_play.png">
@@ -72,7 +72,7 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8nu-Dt-wyC">
-                                <rect key="frame" x="0.0" y="406" width="64" height="65"/>
+                                <rect key="frame" x="0.0" y="396" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="320x480_portrait_05.png">
