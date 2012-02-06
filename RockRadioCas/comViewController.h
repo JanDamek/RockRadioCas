@@ -21,9 +21,23 @@
     UIButton *playButton;
     UIButton *stopButton;
     
-    UILabel *isPlayingAdText;
+    UILabel *nazevSkladbyLabel;
+    UILabel *interpretLabel;
+    
+    NSTimer *_redrawTimer;
     
 	NSArray *adList;
+    
+    NSURLConnection *xmlFile;
+    NSXMLParser *rssParser;
+    NSMutableArray *articles;
+    NSMutableDictionary *item;
+    NSString *currentElement;
+    NSMutableString *ElementValue;
+    BOOL errorParsing;  
+    
+    NSString *_nazevSkladby;
+    NSString *_interpret;
     
 }
 
@@ -33,10 +47,13 @@
 @property (retain) AVPlayer *player;
 @property (retain) AVPlayerItem *playerItem;
 
-@property (retain) IBOutlet UILabel *isPlayingAdText;
+@property (retain) IBOutlet UILabel *nazevSkladbyLabel;
+@property (retain) IBOutlet UILabel *interpretLabel;
 
 - (IBAction)play:(id)sender;
 - (IBAction)pause:(id)sender;
+- (void)initPlayer;
 
+- (void)parseXMLFileAtURL:(NSString *)URL;
 
 @end

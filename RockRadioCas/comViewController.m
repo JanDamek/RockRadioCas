@@ -20,7 +20,7 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
 @implementation comViewController
 
 @synthesize player, playerItem;
-@synthesize isPlayingAdText;
+@synthesize nazevSkladbyLabel, interpretLabel;
 @synthesize playButton, stopButton;
 
 #pragma mark -
@@ -84,7 +84,13 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
 
 - (IBAction)play:(id)sender
 {  
-	[player play];
+    if (player.status == AVPlayerStatusReadyToPlay){
+	  [player play];
+    }else
+    {
+        [self initPlayer];
+        [player play];
+    }
 	
     [self showStopButton];  
 }
@@ -105,10 +111,109 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
     
     self.playButton = nil;
     self.stopButton = nil;
-    self.isPlayingAdText = nil;
+    self.nazevSkladbyLabel = nil;
+    self.interpretLabel = nil;
+    
+    [_redrawTimer invalidate];
+    _redrawTimer = nil;
     
     [super viewDidUnload];
 }
+
+- (void)parserDidStartDocument:(NSXMLParser *)parser{
+    NSLog(@"File found and parsing started");
+    
+}
+
+- (void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError {
+    
+    NSString *errorString = [NSString stringWithFormat:@"Error code %i", [parseError code]];
+    NSLog(@"Error parsing XML: %@", errorString);
+    [interpretLabel setText:@""];
+    [nazevSkladbyLabel setText:@"Chyba XML"];
+    
+    
+    errorParsing=YES;
+}
+
+- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
+{
+    currentElement = [elementName copy];
+    ElementValue = [[NSMutableString alloc] init];                
+        
+    if ([elementName isEqualToString:@"item"]) {
+        item = [[NSMutableDictionary alloc] init];
+        
+    }
+    
+}
+
+- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string{
+    [ElementValue appendString:string];
+}
+
+- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
+    
+    if ([elementName isEqualToString:@"TITLE"])
+    {
+        _nazevSkladby = [ElementValue copy];
+    }
+    else if ([elementName isEqualToString:@"ARTIST"])
+    {
+        _interpret = [ElementValue copy];
+    }  
+    
+    if ([elementName isEqualToString:@"item"]) {
+        [articles addObject:[item copy]];
+    } else {
+        [item setObject:ElementValue forKey:elementName];
+    }
+    
+}
+
+- (void)parseXMLFileAtURL:(NSString *)URL
+{
+    
+    NSString *agentString = @"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1";
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:
+                                    [NSURL URLWithString:URL]];
+    [request setValue:agentString forHTTPHeaderField:@"User-Agent"];
+    xmlFile = [ NSURLConnection sendSynchronousRequest:request returningResponse: nil error: nil ];
+    
+    
+    articles = [[NSMutableArray alloc] init];
+    errorParsing=NO;
+    
+    rssParser = [[NSXMLParser alloc] initWithData:xmlFile];
+    [rssParser setDelegate:self];
+    
+    // You may need to turn some of these on depending on the type of XML file you are parsing
+    [rssParser setShouldProcessNamespaces:NO];
+    [rssParser setShouldReportNamespacePrefixes:NO];
+    [rssParser setShouldResolveExternalEntities:NO];
+    
+    [rssParser parse];    
+    
+}
+
+- (void) _frameTimerFired:(NSTimer *)timer {
+    // on timer 
+    if (playButton.hidden == NO)
+    {
+      NSDate *now = [NSDate date];    
+      [nazevSkladbyLabel setText:[[NSString alloc] initWithFormat:@"%@",now]];
+      [interpretLabel setText:@""];
+    }
+    else
+    {
+        [self parseXMLFileAtURL:@"http://casrock.cz/nowplaying/rockonair.xml"];
+        
+        [nazevSkladbyLabel setText:_nazevSkladby];        
+        [interpretLabel setText:_interpret];
+    }
+    
+}
+
 
 - (void)viewDidLoad
 {    
@@ -116,6 +221,19 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
     [super viewDidLoad];
     
     // init prehravace
+    
+    [self initPlayer];
+   
+    _redrawTimer = [NSTimer scheduledTimerWithTimeInterval:10
+                                                     target:self
+                                                   selector:@selector(_frameTimerFired:)
+                                                   userInfo:nil
+                                                    repeats:YES];     
+    
+}
+
+- (void)initPlayer
+{
     
     NSString *u = @"http://icecast1.play.cz:8000/casrock32aac";
     

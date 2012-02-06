@@ -49,12 +49,24 @@
                                 <rect key="frame" x="0.0" y="416" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" minimumFontSize="10" id="8JU-DT-hWA" userLabel="Ad is playing">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="nkp-ZM-b1G" userLabel="InterpretLabel">
+                                <rect key="frame" x="32" y="244" width="257" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" text="testovaci text pro stylovani vypisu, jak to vypada kdz je to delsi" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" minimumFontSize="10" id="8JU-DT-hWA" userLabel="NazevSkladbyLabel">
                                 <rect key="frame" x="32" y="273" width="257" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" staticText="YES" updatesFrequently="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="3" height="3"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="X7c-nS-IyL">
                                 <rect key="frame" x="0.0" y="416" width="64" height="64"/>
@@ -95,7 +107,8 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="isPlayingAdText" destination="8JU-DT-hWA" id="nKP-6f-Lpo"/>
+                        <outlet property="interpretLabel" destination="nkp-ZM-b1G" id="7VQ-gs-wCg"/>
+                        <outlet property="nazevSkladbyLabel" destination="8JU-DT-hWA" id="tnO-XO-bad"/>
                         <outlet property="playButton" destination="X7c-nS-IyL" id="dW2-Qj-2EH"/>
                         <outlet property="stopButton" destination="8nu-Dt-wyC" id="o81-PE-Tni"/>
                     </connections>
@@ -121,7 +134,8 @@
             <relationships>
                 <relationship kind="action" name="pause:"/>
                 <relationship kind="action" name="play:"/>
-                <relationship kind="outlet" name="isPlayingAdText" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="interpretLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="nazevSkladbyLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="playButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="stopButton" candidateClass="UIButton"/>
             </relationships>
