@@ -20,11 +20,17 @@
     
     UIButton *playButton;
     UIButton *stopButton;
+
+    UIButton *showVolumeButton;
+    UIButton *hideVolumeButton;
     
     UILabel *nazevSkladbyLabel;
     UILabel *interpretLabel;
     
     NSTimer *_redrawTimer;
+    
+    UIView *hlasitostView;
+    UISlider *sliderHlasitost;
     
 	NSArray *adList;
     
@@ -43,6 +49,10 @@
 
 @property (retain) IBOutlet UIButton *playButton;
 @property (retain) IBOutlet UIButton *stopButton;
+@property (retain) IBOutlet UIButton *showVolumeButton;
+@property (retain) IBOutlet UIButton *hideVolumeButton;
+@property (retain) IBOutlet UIView *hlasitostView;
+@property (retain) IBOutlet UISlider *sliderHlasitost;
 
 @property (retain) AVPlayer *player;
 @property (retain) AVPlayerItem *playerItem;
@@ -53,6 +63,8 @@
 - (IBAction)play:(id)sender;
 - (IBAction)pause:(id)sender;
 - (void)initPlayer;
+- (IBAction)showVolume:(id)sender;
+- (IBAction)hideVolume:(id)sender;
 
 - (void)parseXMLFileAtURL:(NSString *)URL;
 

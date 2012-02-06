@@ -21,7 +21,8 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
 
 @synthesize player, playerItem;
 @synthesize nazevSkladbyLabel, interpretLabel;
-@synthesize playButton, stopButton;
+@synthesize playButton, stopButton, showVolumeButton, hideVolumeButton;
+@synthesize sliderHlasitost, hlasitostView;
 
 #pragma mark -
 #pragma mark Movie controller methods
@@ -40,7 +41,26 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
     //    [toolbarItems replaceObjectAtIndex:0 withObject:stopButton];
     //    toolBar.items = toolbarItems;
     playButton.hidden = YES;
-    stopButton.hidden = NO;
+    stopButton.hidden = NO;     
+
+}
+
+- (IBAction)showVolume:(id)sender
+{
+    [sliderHlasitost setHidden:NO];
+    
+    [UIView animateWithDuration:0.5
+                          delay:0.0
+                        options: UIViewAnimationCurveEaseOut
+                     animations:^{
+                         sliderHlasitost.frame = CGRectMake(25, 360, 270, 22 );
+                     } 
+                     completion:^(BOOL finished){
+                         NSLog(@"Done!");
+                         showVolumeButton.hidden = YES;
+                         hideVolumeButton.hidden = NO;                         
+                     }];     
+    
 }
 
 /* Show the play button in the movie player controller. */
@@ -51,6 +71,24 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
     //    toolBar.items = toolbarItems;
     playButton.hidden = NO;
     stopButton.hidden = YES;
+      
+}
+
+- (IBAction)hideVolume:(id)sender
+{ 
+    
+    [UIView animateWithDuration:0.5
+                          delay:0.0
+                        options: UIViewAnimationCurveEaseOut
+                     animations:^{
+                         sliderHlasitost.frame = CGRectMake(88, 440, 5, 22 );
+                     } 
+                     completion:^(BOOL finished){
+                         [sliderHlasitost setHidden:YES];
+                         showVolumeButton.hidden = NO;
+                         hideVolumeButton.hidden = YES;                         
+                     }];  
+   
 }
 
 /* If the media is playing, show the stop button; otherwise, show the play button. */
@@ -220,6 +258,8 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
   
     [super viewDidLoad];
     
+    [self.view addSubview:sliderHlasitost];
+    
     // init prehravace
     
     [self initPlayer];
@@ -250,14 +290,7 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
     [self.player removeObserver:self forKeyPath:kCurrentItemKey];
     [self.player removeObserver:self forKeyPath:kTimedMetadataKey];
     [self.player removeObserver:self forKeyPath:kRateKey];
-//	[player release]; 
-//	[adList release];
-	
-//	[playButton release];
-//	[stopButton release];
-//	[isPlayingAdText release];
-	
-//    [super dealloc];
+
 }
 
 @end
