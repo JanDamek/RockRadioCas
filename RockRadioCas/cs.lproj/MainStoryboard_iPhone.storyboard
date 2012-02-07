@@ -8,7 +8,7 @@
         <scene sceneID="5">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
-                <viewController wantsFullScreenLayout="YES" id="2" customClass="comViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScenePortail" wantsFullScreenLayout="YES" modalTransitionStyle="partialCurl" id="2" customClass="comViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -160,14 +160,11 @@
                 <relationship kind="action" name="pause:"/>
                 <relationship kind="action" name="play:"/>
                 <relationship kind="action" name="showVolume:"/>
-                <relationship kind="action" name="volumeChange:"/>
                 <relationship kind="outlet" name="hideVolumeButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="hlasitostView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="interpretLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="nazevSkladbyLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="playButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="showVolumeButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="sliderHlasitost" candidateClass="UISlider"/>
                 <relationship kind="outlet" name="stopButton" candidateClass="UIButton"/>
             </relationships>
         </class>

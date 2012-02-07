@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Nastavení</key>
+	<string>Nastavení</string>
+	<key>Spustit při startu</key>
+	<string>Stupstit při startu</string>
+	<key>Stream</key>
+	<string>Stream pro přehrávání</string>
+</dict>
+</plist>

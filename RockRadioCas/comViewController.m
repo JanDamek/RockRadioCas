@@ -1,8 +1,11 @@
 #import "comViewController.h"
 
+#import <SystemConfiguration/SCNetworkReachability.h>
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioToolbox.h>
 #import <MediaPlayer/MPVolumeView.h>
+
+#include <netinet/in.h>
 
 NSString *kTracksKey		= @"tracks";
 NSString *kStatusKey		= @"status";
@@ -33,6 +36,20 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
  ** ------------------------------------------------------- */
 
 #pragma mark Play, Stop Buttons
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:
+(UIInterfaceOrientation)interfaceOrientation
+{
+    if (interfaceOrientation == 
+        UIInterfaceOrientationLandscapeRight)
+    {
+        [self performSegueWithIdentifier: @"SceneLandscape" 
+                                  sender: self];
+    }
+    // Return YES for supported orientations
+    return (interfaceOrientation == 
+            UIInterfaceOrientationPortrait);
+}
 
 /* Show the stop button in the movie player controller. */
 -(void)showStopButton
@@ -271,6 +288,14 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
 {    
   
     [super viewDidLoad];
+
+    NSDictionary *userDefaultsDefaults = [NSDictionary dictionaryWithObjectsAndKeys:
+                                          @"http://icecast1.play.cz:8000/casrock32aac", @"stream",
+                                          nil];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:userDefaultsDefaults];    
+    
+    defaults = [NSUserDefaults standardUserDefaults];
+    
     
     myVolumeView =
     [[MPVolumeView alloc] initWithFrame: CGRectMake(88, 440, 5, 22 )];
@@ -279,25 +304,31 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
     
     // init prehravace
     
+
     [self initPlayer];
-   
+    
     _redrawTimer = [NSTimer scheduledTimerWithTimeInterval:10
                                                      target:self
                                                    selector:@selector(_frameTimerFired:)
                                                    userInfo:nil
                                                     repeats:YES];     
-    
-    [self play:0];
+    if ([defaults boolForKey:@"auto_play"] == YES) {
+       [self play:0];
+    }
 }
 
 - (void)initPlayer
 {
+//    if ([self connectedToNetwork])
+    {
+    NSString *u=[defaults objectForKey:@"stream"];
     
-    NSString *u = @"http://icecast1.play.cz:8000/casrock32aac";
+//    NSString *u = @"http://icecast1.play.cz:8000/casrock32aac";
     
     NSURL *url = [NSURL URLWithString:u];
     
     player = [[AVPlayer alloc] initWithURL:url];    
+    }
 }
 
 - (void)dealloc

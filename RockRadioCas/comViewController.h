@@ -43,6 +43,7 @@
     NSString *_nazevSkladby;
     NSString *_interpret;
     MPVolumeView *myVolumeView;
+    NSUserDefaults *defaults; 
     
 }
 
@@ -64,6 +65,7 @@
 - (IBAction)hideVolume:(id)sender;
 
 - (void)parseXMLFileAtURL:(NSString *)URL;
+- (BOOL)connectedToNetwork;
 
 - (void) doTimer;
 
