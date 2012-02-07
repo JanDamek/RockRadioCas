@@ -685,8 +685,11 @@
 		34F6022614DF1D27005DB8A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_OPENMP_SUPPORT = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RockRadioCas/RockRadioCas-Prefix.pch";
+				GCC_VERSION = "";
+				GENERATE_PROFILING_CODE = YES;
 				INFOPLIST_FILE = "RockRadioCas/RockRadioCas-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -697,8 +700,11 @@
 		34F6022714DF1D27005DB8A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_OPENMP_SUPPORT = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RockRadioCas/RockRadioCas-Prefix.pch";
+				GCC_VERSION = "";
+				GENERATE_PROFILING_CODE = YES;
 				INFOPLIST_FILE = "RockRadioCas/RockRadioCas-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";

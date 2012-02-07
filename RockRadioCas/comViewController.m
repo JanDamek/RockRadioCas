@@ -5,6 +5,7 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import <MediaPlayer/MPVolumeView.h>
 
+//#include "Reachability.h"
 #include <netinet/in.h>
 
 NSString *kTracksKey		= @"tracks";
@@ -319,7 +320,7 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
 
 - (void)initPlayer
 {
-//    if ([self connectedToNetwork])
+//    if ([[Reachability reachabilityForLocalWiFi] currentReachabilityStatus] == ReachableViaWiFi)
     {
     NSString *u=[defaults objectForKey:@"stream"];
     
@@ -328,6 +329,15 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
     NSURL *url = [NSURL URLWithString:u];
     
     player = [[AVPlayer alloc] initWithURL:url];    
+    }
+//    else
+    {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Chyba internetu"
+                                                            message:@"WiFi není dostupné."
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+        [alertView show];        
     }
 }
 

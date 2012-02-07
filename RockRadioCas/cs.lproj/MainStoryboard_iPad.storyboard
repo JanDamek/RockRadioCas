@@ -21,10 +21,6 @@
                                 <rect key="frame" x="351.5" y="414.5" width="65" height="65"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="320x480_portrait_06_press.png" id="RmT-XJ-S1z">
-                                <rect key="frame" x="287.5" y="414.5" width="65" height="65"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="320x480_portrait_08_press.png" id="dWs-Hq-px9">
                                 <rect key="frame" x="415.5" y="414.5" width="65" height="65"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,10 +31,6 @@
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="320x480_portrait_08.png" id="oR2-ez-qnh">
                                 <rect key="frame" x="415.5" y="414.5" width="65" height="65"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="320x480_portrait_06.png" id="5ty-re-yOW">
-                                <rect key="frame" x="287.5" y="414.5" width="65" height="65"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="320x480_portrait_07_press.png" id="V6T-h0-3fF">
@@ -64,6 +56,36 @@
                                 <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="3" height="3"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="A9c-N7-wv0" userLabel="showVolume">
+                                <rect key="frame" x="290" y="414" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="320x480_portrait_06.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showVolume:" destination="2" eventType="touchDown" id="8f2-3Q-4U1"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DmU-Iz-Fzc" userLabel="hideVolume">
+                                <rect key="frame" x="285" y="414" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="320x480_portrait_06_press.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hideVolume:" destination="2" eventType="touchDown" id="FLb-b6-ggL"/>
+                                </connections>
+                            </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Art-lW-qI8" userLabel="stopButton">
                                 <rect key="frame" x="223" y="414.5" width="66" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -102,9 +124,11 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="hideVolumeButton" destination="DmU-Iz-Fzc" id="oRp-Hq-FDt"/>
                         <outlet property="interpretLabel" destination="2ur-cX-5tg" id="p6v-4k-7BG"/>
                         <outlet property="nazevSkladbyLabel" destination="Scb-Wp-Xl6" id="zKr-qA-cTC"/>
                         <outlet property="playButton" destination="cMs-4H-YI3" id="Ias-Wh-5NS"/>
+                        <outlet property="showVolumeButton" destination="A9c-N7-wv0" id="Gsy-sq-ncU"/>
                         <outlet property="stopButton" destination="Art-lW-qI8" id="1gX-CH-XYb"/>
                     </connections>
                 </viewController>
@@ -132,14 +156,11 @@
                 <relationship kind="action" name="pause:"/>
                 <relationship kind="action" name="play:"/>
                 <relationship kind="action" name="showVolume:"/>
-                <relationship kind="action" name="volumeChange:"/>
                 <relationship kind="outlet" name="hideVolumeButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="hlasitostView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="interpretLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="nazevSkladbyLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="playButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="showVolumeButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="sliderHlasitost" candidateClass="UISlider"/>
                 <relationship kind="outlet" name="stopButton" candidateClass="UIButton"/>
             </relationships>
         </class>
