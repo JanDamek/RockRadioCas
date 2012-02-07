@@ -2,6 +2,7 @@
 
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioToolbox.h>
+#import <MediaPlayer/MPVolumeView.h>
 
 NSString *kTracksKey		= @"tracks";
 NSString *kStatusKey		= @"status";
@@ -22,7 +23,6 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
 @synthesize player, playerItem;
 @synthesize nazevSkladbyLabel, interpretLabel;
 @synthesize playButton, stopButton, showVolumeButton, hideVolumeButton;
-@synthesize sliderHlasitost, hlasitostView;
 
 #pragma mark -
 #pragma mark Movie controller methods
@@ -47,13 +47,14 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
 
 - (IBAction)showVolume:(id)sender
 {
-    [sliderHlasitost setHidden:NO];
+    [myVolumeView setHidden:NO];
+    
     
     [UIView animateWithDuration:0.5
                           delay:0.0
                         options: UIViewAnimationCurveEaseOut
                      animations:^{
-                         sliderHlasitost.frame = CGRectMake(25, 360, 270, 22 );
+                         myVolumeView.frame = CGRectMake(25, 360, 270, 22 );
                      } 
                      completion:^(BOOL finished){
                          NSLog(@"Done!");
@@ -61,6 +62,10 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
                          hideVolumeButton.hidden = NO;                         
                      }];     
     
+}
+
+-(void)volumeChange:(id)sender{
+//    player.volume = sliderHlasitost.value;
 }
 
 /* Show the play button in the movie player controller. */
@@ -81,10 +86,10 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
                           delay:0.0
                         options: UIViewAnimationCurveEaseOut
                      animations:^{
-                         sliderHlasitost.frame = CGRectMake(88, 440, 5, 22 );
+                         myVolumeView.frame = CGRectMake(88, 440, 5, 22 );
                      } 
                      completion:^(BOOL finished){
-                         [sliderHlasitost setHidden:YES];
+                         [myVolumeView setHidden:YES];
                          showVolumeButton.hidden = NO;
                          hideVolumeButton.hidden = YES;                         
                      }];  
@@ -258,7 +263,10 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
   
     [super viewDidLoad];
     
-    [self.view addSubview:sliderHlasitost];
+    myVolumeView =
+    [[MPVolumeView alloc] initWithFrame: CGRectMake(88, 440, 5, 22 )];
+    [self.view addSubview: myVolumeView];
+    myVolumeView.hidden = YES;
     
     // init prehravace
     
@@ -405,9 +413,6 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
     /* Make our new AVPlayerItem the AVPlayer's current item. */
     if (self.player.currentItem != self.playerItem)
     {
-        /* Replace the player item with a new player item. The item replacement occurs 
-         asynchronously; observe the currentItem property to find out when the 
-         replacement will/did occur*/
         [[self player] replaceCurrentItemWithPlayerItem:self.playerItem];
         
         [self syncPlayPauseButtons];

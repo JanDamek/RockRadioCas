@@ -8,11 +8,12 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioToolbox.h>
+#import <MediaPlayer/MPVolumeView.h>
 
 @class AVPlayer;
 @class AVPlayerItem;
 
-@interface comViewController : UIViewController {
+@interface comViewController : UIViewController <AVAudioPlayerDelegate> {
     
     
     AVPlayer *player;
@@ -28,10 +29,7 @@
     UILabel *interpretLabel;
     
     NSTimer *_redrawTimer;
-    
-    UIView *hlasitostView;
-    UISlider *sliderHlasitost;
-    
+     
 	NSArray *adList;
     
     NSURLConnection *xmlFile;
@@ -44,6 +42,7 @@
     
     NSString *_nazevSkladby;
     NSString *_interpret;
+    MPVolumeView *myVolumeView;
     
 }
 
@@ -51,8 +50,6 @@
 @property (retain) IBOutlet UIButton *stopButton;
 @property (retain) IBOutlet UIButton *showVolumeButton;
 @property (retain) IBOutlet UIButton *hideVolumeButton;
-@property (retain) IBOutlet UIView *hlasitostView;
-@property (retain) IBOutlet UISlider *sliderHlasitost;
 
 @property (retain) AVPlayer *player;
 @property (retain) AVPlayerItem *playerItem;

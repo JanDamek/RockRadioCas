@@ -130,26 +130,13 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="hideVolumeButton" destination="Bb0-Ka-gac" id="cCu-6m-DVx"/>
-                        <outlet property="hlasitostView" destination="YCa-YG-ZIH" id="m79-va-lom"/>
                         <outlet property="interpretLabel" destination="nkp-ZM-b1G" id="7VQ-gs-wCg"/>
                         <outlet property="nazevSkladbyLabel" destination="8JU-DT-hWA" id="tnO-XO-bad"/>
                         <outlet property="playButton" destination="X7c-nS-IyL" id="dW2-Qj-2EH"/>
                         <outlet property="showVolumeButton" destination="chy-9w-llo" id="BzL-ZC-QDg"/>
-                        <outlet property="sliderHlasitost" destination="eUM-13-1OT" id="4hq-ug-AwP"/>
                         <outlet property="stopButton" destination="8nu-Dt-wyC" id="o81-PE-Tni"/>
                     </connections>
                 </viewController>
-                <view contentMode="scaleToFill" id="YCa-YG-ZIH" userLabel="posovani zvuku">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <slider hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="-0.5" minValue="0.0" maxValue="1" id="eUM-13-1OT">
-                            <rect key="frame" x="83" y="445" width="9" height="23"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                        </slider>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                </view>
             </objects>
         </scene>
     </scenes>
@@ -173,6 +160,7 @@
                 <relationship kind="action" name="pause:"/>
                 <relationship kind="action" name="play:"/>
                 <relationship kind="action" name="showVolume:"/>
+                <relationship kind="action" name="volumeChange:"/>
                 <relationship kind="outlet" name="hideVolumeButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="hlasitostView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="interpretLabel" candidateClass="UILabel"/>
