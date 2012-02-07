@@ -65,4 +65,6 @@
 
 - (void)parseXMLFileAtURL:(NSString *)URL;
 
+- (void) doTimer;
+
 @end

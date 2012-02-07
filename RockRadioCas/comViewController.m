@@ -64,9 +64,6 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
     
 }
 
--(void)volumeChange:(id)sender{
-//    player.volume = sliderHlasitost.value;
-}
 
 /* Show the play button in the movie player controller. */
 -(void)showPlayButton
@@ -127,12 +124,17 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
 
 - (IBAction)play:(id)sender
 {  
-    if (player.status == AVPlayerStatusReadyToPlay){
-	  [player play];
-    }else
+    if (player.status == AVPlayerStatusReadyToPlay)
+    {	  
+        [player play];
+           
+        [self doTimer];  
+    }
+    else
     {
         [self initPlayer];
         [player play];
+        [self doTimer];
     }
 	
     [self showStopButton];  
@@ -143,6 +145,9 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
 	[player pause];
     
     [self showPlayButton];
+    
+    [self doTimer];
+    
 }
 
 #pragma mark -
@@ -239,13 +244,13 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
     
 }
 
-- (void) _frameTimerFired:(NSTimer *)timer {
+- (void) doTimer{
     // on timer 
     if (playButton.hidden == NO)
     {
-      NSDate *now = [NSDate date];    
-      [nazevSkladbyLabel setText:[[NSString alloc] initWithFormat:@"%@",now]];
-      [interpretLabel setText:@""];
+        NSDate *now = [NSDate date];    
+        [nazevSkladbyLabel setText:[[NSString alloc] initWithFormat:@"%@",now]];
+        [interpretLabel setText:@""];
     }
     else
     {
@@ -255,6 +260,10 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
         [interpretLabel setText:_interpret];
     }
     
+}
+
+- (void) _frameTimerFired:(NSTimer *)timer {
+    [self doTimer];    
 }
 
 
