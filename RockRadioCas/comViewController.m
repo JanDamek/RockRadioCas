@@ -287,6 +287,7 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
                                                    userInfo:nil
                                                     repeats:YES];     
     
+    [self play:0];
 }
 
 - (void)initPlayer
