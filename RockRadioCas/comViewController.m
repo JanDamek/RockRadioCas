@@ -283,7 +283,16 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
     
     if (([self player]) && (self.player.currentItem.playbackLikelyToKeepUp == NO))
     {
-        [interpretLabel setText:@"Buffering data"];
+//        if ((([[Reachability reachabilityForLocalWiFi] currentReachabilityStatus] == ReachableViaWiFi)) || ([defaults boolForKey:@"only_wifi"] != YES))
+//        {
+          [interpretLabel setText:@"Buffering data"];
+//        }
+//        else
+//        {
+//            [self pause:0];
+//            [self showPlayButton];
+//            [self alertWiFi];    
+//        }
     }    
     
 }
