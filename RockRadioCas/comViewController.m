@@ -151,6 +151,7 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
     }
     else
     {
+        [self showPlayButton];        
         [self alertWiFi];
     }
 }
