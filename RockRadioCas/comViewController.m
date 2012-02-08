@@ -125,6 +125,8 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
 
 - (IBAction)play:(id)sender
 {  
+    [self showStopButton]; 
+    
     if (player.status == AVPlayerStatusReadyToPlay)
     {	  
         [player play];
@@ -136,16 +138,14 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
         [self initPlayer];
         [player play];
         [self doTimer];
-    }
-	
-    [self showStopButton];  
+    }	 
 }
 
 - (IBAction)pause:(id)sender
 {
-	[player pause];
-    
     [self showPlayButton];
+    
+	[player pause];
     
     [self doTimer];
     
@@ -264,7 +264,12 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
     if (player.status == AVPlayerStatusFailed)
     {
         [self pause:0];
-    }      
+    }  
+    
+    if (self.player.currentItem.playbackLikelyToKeepUp == NO) 
+    {
+        [interpretLabel setText:@"Buffering data"];
+    }    
     
 }
 
@@ -274,8 +279,7 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
 
 
 - (void)viewDidLoad
-{    
-  
+{     
     [super viewDidLoad];
 
     NSDictionary *userDefaultsDefaults = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -301,8 +305,11 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
                                                    selector:@selector(_frameTimerFired:)
                                                    userInfo:nil
                                                     repeats:YES];     
-    if ([defaults boolForKey:@"auto_play"] == YES) {
-       [self play:0];
+    
+    if (([defaults boolForKey:@"auto_play"] == YES)&& 
+        ((([[Reachability reachabilityForLocalWiFi] currentReachabilityStatus] == ReachableViaWiFi)) || ([defaults boolForKey:@"only_wifi"] != YES))) {
+        [self showStopButton];
+        [self play:0];
     }
 }
 
@@ -320,6 +327,9 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
     }
     else
     {
+        [self pause:0];
+        [self showPlayButton];
+        
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Chyba internetu"
                                                             message:@"WiFi není dostupné."
                                                            delegate:nil
