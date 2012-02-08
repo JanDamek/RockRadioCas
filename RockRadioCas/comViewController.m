@@ -119,26 +119,40 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
     self.stopButton.enabled = NO;
 }
 
-#pragma mark Scrubber control
+- (void)alertWiFi
+{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Nastaveni"
+                                                        message:@"WiFi není dostupné."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+    [alertView show];        
+}
 
 #pragma mark Button Action Methods
 
 - (IBAction)play:(id)sender
 {  
-    [self showStopButton]; 
+    if ((([[Reachability reachabilityForLocalWiFi] currentReachabilityStatus] == ReachableViaWiFi)) || ([defaults boolForKey:@"only_wifi"] != YES))         
+    {    
+      [self showStopButton]; 
     
-    if (player.status == AVPlayerStatusReadyToPlay)
-    {	  
-        [player play];
-           
-        [self doTimer];  
+      if (player.status == AVPlayerStatusReadyToPlay)
+      {	  
+          [player play];           
+          [self doTimer];  
+      }
+      else
+      {
+          [self initPlayer];
+          [player play];
+          [self doTimer];
+      }	 
     }
     else
     {
-        [self initPlayer];
-        [player play];
-        [self doTimer];
-    }	 
+        [self alertWiFi];
+    }
 }
 
 - (IBAction)pause:(id)sender
@@ -317,25 +331,15 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
 {
     if ((([[Reachability reachabilityForLocalWiFi] currentReachabilityStatus] == ReachableViaWiFi)) || ([defaults boolForKey:@"only_wifi"] != YES))         
     {
-    NSString *u=[defaults objectForKey:@"stream"];
-    
-//    NSString *u = @"http://icecast1.play.cz:8000/casrock32aac";
-    
-    NSURL *url = [NSURL URLWithString:u];
-    
-    player = [[AVPlayer alloc] initWithURL:url];    
+        NSString *u=[defaults objectForKey:@"stream"];      
+        NSURL *url = [NSURL URLWithString:u];    
+        player = [[AVPlayer alloc] initWithURL:url]; 
     }
     else
     {
         [self pause:0];
         [self showPlayButton];
-        
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Chyba internetu"
-                                                            message:@"WiFi není dostupné."
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"OK"
-                                                  otherButtonTitles:nil];
-        [alertView show];        
+        [self alertWiFi];
     }
 }
 
