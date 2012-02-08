@@ -280,7 +280,7 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
         [self pause:0];
     }  
     
-    if (self.player.currentItem.playbackLikelyToKeepUp == NO) 
+    if (([self player]) && (self.player.currentItem.playbackLikelyToKeepUp == NO))
     {
         [interpretLabel setText:@"Buffering data"];
     }    
