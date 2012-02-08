@@ -4,9 +4,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioToolbox.h>
 #import <MediaPlayer/MPVolumeView.h>
-
-//#include "Reachability.h"
-#include <netinet/in.h>
+#import "Reachability.h"
 
 NSString *kTracksKey		= @"tracks";
 NSString *kStatusKey		= @"status";
@@ -38,20 +36,6 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
 
 #pragma mark Play, Stop Buttons
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:
-(UIInterfaceOrientation)interfaceOrientation
-{
-    if (interfaceOrientation == 
-        UIInterfaceOrientationLandscapeRight)
-    {
-        [self performSegueWithIdentifier: @"SceneLandscape" 
-                                  sender: self];
-    }
-    // Return YES for supported orientations
-    return (interfaceOrientation == 
-            UIInterfaceOrientationPortrait);
-}
-
 /* Show the stop button in the movie player controller. */
 -(void)showStopButton
 {
@@ -60,7 +44,6 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
     //    toolBar.items = toolbarItems;
     playButton.hidden = YES;
     stopButton.hidden = NO;     
-
 }
 
 - (IBAction)showVolume:(id)sender
@@ -244,7 +227,7 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:
                                     [NSURL URLWithString:URL]];
     [request setValue:agentString forHTTPHeaderField:@"User-Agent"];
-    xmlFile = [ NSURLConnection sendSynchronousRequest:request returningResponse: nil error: nil ];
+    xmlFile = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
     
     
     articles = [[NSMutableArray alloc] init];
@@ -262,7 +245,7 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
     
 }
 
-- (void) doTimer{
+- (void)doTimer{
     // on timer 
     if (playButton.hidden == NO)
     {
@@ -278,9 +261,14 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
         [interpretLabel setText:_interpret];
     }
     
+    if (player.status == AVPlayerStatusFailed)
+    {
+        [self pause:0];
+    }      
+    
 }
 
-- (void) _frameTimerFired:(NSTimer *)timer {
+- (void)_frameTimerFired:(NSTimer *)timer {
     [self doTimer];    
 }
 
@@ -320,7 +308,7 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
 
 - (void)initPlayer
 {
-//    if ([[Reachability reachabilityForLocalWiFi] currentReachabilityStatus] == ReachableViaWiFi)
+    if ((([[Reachability reachabilityForLocalWiFi] currentReachabilityStatus] == ReachableViaWiFi)) || ([defaults boolForKey:@"only_wifi"] != YES))         
     {
     NSString *u=[defaults objectForKey:@"stream"];
     
@@ -330,7 +318,7 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
     
     player = [[AVPlayer alloc] initWithURL:url];    
     }
-//    else
+    else
     {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Chyba internetu"
                                                             message:@"WiFi není dostupné."

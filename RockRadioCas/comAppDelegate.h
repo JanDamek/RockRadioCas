@@ -9,10 +9,17 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioToolbox.h>
+#import "comViewController.h"
 
 @interface comAppDelegate : UIResponder <UIApplicationDelegate>
+//@interface comAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> 
+{
+	UIWindow *window;
+    comViewController *mainComViewController;
+}
 
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet comViewController *mainComViewController;
 
 
 @end

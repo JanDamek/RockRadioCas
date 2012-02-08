@@ -65,8 +65,7 @@
 - (IBAction)hideVolume:(id)sender;
 
 - (void)parseXMLFileAtURL:(NSString *)URL;
-- (BOOL)connectedToNetwork;
 
-- (void) doTimer;
+- (void)doTimer;
 
 @end

@@ -38,6 +38,16 @@
 			<key>Title</key>
 			<string>Spustit při startu</string>
 		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>DefaultValue</key>
+			<false/>
+			<key>Key</key>
+			<string>only_wifi</string>
+			<key>Title</key>
+			<string>Pouze přes WiFi</string>
+		</dict>
 	</array>
 	<key>StringsTable</key>
 	<string>Root</string>

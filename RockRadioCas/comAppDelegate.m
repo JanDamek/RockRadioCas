@@ -10,11 +10,15 @@
 
 @implementation comAppDelegate
 
-
-@synthesize window = _window;
+@synthesize window;
+@synthesize mainComViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+//    [window addSubview:mainComViewController.view];
+    
+//    [window makeKeyAndVisible];    
     
     NSError *sessionError = nil;
     [[AVAudioSession sharedInstance] setDelegate:self];
@@ -28,7 +32,7 @@
     // 2. Changing the default output audio route
 //    UInt32 doChangeDefaultRoute = 1;
 //    AudioSessionSetProperty(kAudioSessionProperty_OverrideCategoryDefaultToSpeaker, sizeof(doChangeDefaultRoute), &doChangeDefaultRoute);
-    
+   
     // Override point for customization after application launch.
     return YES;
 }
