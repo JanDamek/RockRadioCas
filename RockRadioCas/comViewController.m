@@ -22,13 +22,26 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
 
 @implementation comViewController
 
-@synthesize player, playerItem;
+@synthesize player, playerItem, landscape, portreit;
 @synthesize nazevSkladbyLabel, interpretLabel;
 @synthesize playButton, stopButton, showVolumeButton, hideVolumeButton;
 
 #pragma mark -
 #pragma mark Movie controller methods
 #pragma mark -
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations
+    if (interfaceOrientation == UIInterfaceOrientationPortrait || interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown)
+    {
+        self.view = portreit;
+    }
+    else
+    {
+        self.view = landscape;
+    }
+    return YES;
+}
 
 /* ---------------------------------------------------------
  **  Methods to handle manipulation of the movie scrubber control

@@ -45,12 +45,17 @@
     MPVolumeView *myVolumeView;
     NSUserDefaults *defaults; 
     
+    UIView *landscape;
+    UIView *portreit;
+    
 }
 
 @property (retain) IBOutlet UIButton *playButton;
 @property (retain) IBOutlet UIButton *stopButton;
 @property (retain) IBOutlet UIButton *showVolumeButton;
 @property (retain) IBOutlet UIButton *hideVolumeButton;
+@property (nonatomic, retain) IBOutlet UIView *portreit;
+@property (nonatomic, retain) IBOutlet UIView *landscape;
 
 @property (retain) AVPlayer *player;
 @property (retain) AVPlayerItem *playerItem;

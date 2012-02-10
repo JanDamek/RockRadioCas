@@ -37,13 +37,13 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "RockRadioCas/comViewController.m"
-         timestampString = "350356627.669022"
+         timestampString = "350526649.527574"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "307"
-         endingLineNumber = "307"
-         landmarkName = "-viewDidLoad"
-         landmarkType = "5">
+         startingLineNumber = "317"
+         endingLineNumber = "317"
+         landmarkName = "@implementation comViewController"
+         landmarkType = "3">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -51,11 +51,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "RockRadioCas/comViewController.m"
-         timestampString = "350356435.13797"
+         timestampString = "350526649.527574"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "281"
-         endingLineNumber = "281"
+         startingLineNumber = "291"
+         endingLineNumber = "291"
          landmarkName = "-doTimer"
          landmarkType = "5">
       </FileBreakpoint>
@@ -65,11 +65,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "RockRadioCas/comViewController.m"
-         timestampString = "350356435.13797"
+         timestampString = "350526649.527574"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "284"
-         endingLineNumber = "284"
+         startingLineNumber = "294"
+         endingLineNumber = "294"
          landmarkName = "-doTimer"
          landmarkType = "5">
       </FileBreakpoint>
@@ -85,6 +85,48 @@
          startingLineNumber = "120"
          endingLineNumber = "120"
          landmarkName = "-currentReachabilityStatus"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "RockRadioCas/comViewController.m"
+         timestampString = "350526649.527574"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "43"
+         endingLineNumber = "43"
+         landmarkName = "-shouldAutorotateToInterfaceOrientation:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "RockRadioCas/comViewController.m"
+         timestampString = "350526688.789848"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "42"
+         endingLineNumber = "42"
+         landmarkName = "-shouldAutorotateToInterfaceOrientation:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "RockRadioCas/comViewController.m"
+         timestampString = "350526690.454161"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "41"
+         endingLineNumber = "41"
+         landmarkName = "-shouldAutorotateToInterfaceOrientation:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
