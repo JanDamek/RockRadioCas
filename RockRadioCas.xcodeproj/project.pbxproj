@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3437844914E721670025BC11 /* FacebookView-iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3437844814E721670025BC11 /* FacebookView-iPhone.xib */; };
+		3437845114E7260D0025BC11 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3437844F14E7260C0025BC11 /* Model.xcdatamodeld */; };
 		346DB10314E1F26000ADC6C3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 346DB10214E1F26000ADC6C3 /* Reachability.m */; };
 		346DB10714E1F68F00ADC6C3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 346DB10614E1F68F00ADC6C3 /* SystemConfiguration.framework */; };
 		3490015014E0A8400062DD0C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3490014F14E0A8400062DD0C /* MediaPlayer.framework */; };
@@ -104,6 +106,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3437844814E721670025BC11 /* FacebookView-iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "FacebookView-iPhone.xib"; sourceTree = "<group>"; };
+		3437845014E7260D0025BC11 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		346DB10114E1F26000ADC6C3 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = images/Reachability.h; sourceTree = "<group>"; };
 		346DB10214E1F26000ADC6C3 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = images/Reachability.m; sourceTree = "<group>"; };
 		346DB10414E1F61E00ADC6C3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -269,6 +273,8 @@
 				34F6021714DF1D27005DB8A9 /* comAppDelegate.h */,
 				34F6021814DF1D27005DB8A9 /* comAppDelegate.m */,
 				3490016514E1DBFC0062DD0C /* MainWindow-iPhone.xib */,
+				3437844814E721670025BC11 /* FacebookView-iPhone.xib */,
+				3437844F14E7260C0025BC11 /* Model.xcdatamodeld */,
 				34F6022014DF1D27005DB8A9 /* comViewController.h */,
 				34F6022114DF1D27005DB8A9 /* comViewController.m */,
 				3490016714E1E2E00062DD0C /* mainView-iPad.xib */,
@@ -596,6 +602,7 @@
 				3490015314E1B6400062DD0C /* Settings.bundle in Resources */,
 				3490016614E1DBFC0062DD0C /* MainWindow-iPhone.xib in Resources */,
 				3490016914E1E2E00062DD0C /* mainView-iPad.xib in Resources */,
+				3437844914E721670025BC11 /* FacebookView-iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +617,7 @@
 				34F6021914DF1D27005DB8A9 /* comAppDelegate.m in Sources */,
 				34F6022214DF1D27005DB8A9 /* comViewController.m in Sources */,
 				346DB10314E1F26000ADC6C3 /* Reachability.m in Sources */,
+				3437845114E7260D0025BC11 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,6 +735,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3437844F14E7260C0025BC11 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3437845014E7260D0025BC11 /* Model.xcdatamodel */,
+			);
+			currentVersion = 3437845014E7260D0025BC11 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 34F601FB14DF1D27005DB8A9 /* Project object */;
 }

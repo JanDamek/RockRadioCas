@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="878" systemVersion="11D50b" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="MainWindow" isAbstract="YES" syncable="YES">
+        <attribute name="attribute" optional="YES" syncable="YES"/>
+        <relationship name="relationship" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" syncable="YES"/>
+        <fetchedProperty name="fetchedProperty" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="MainWindow"/>
+        </fetchedProperty>
+    </entity>
+    <elements>
+        <element name="MainWindow" positionX="160" positionY="192" width="128" height="104"/>
+    </elements>
+</model>
