@@ -255,10 +255,10 @@
 			isa = PBXGroup;
 			children = (
 				3468F38714E7D8AF0004697F /* FacebookView-iPhone.xib */,
-				3468F38914E7D8AF0004697F /* mainView-iPad.xib */,
-				34E95E6214E7EA88004C8C0E /* KontaktViewController.xib */,
-				34E95E6614E7EADE004C8C0E /* KontaktViewController-iPad.xib */,
 				3468F38B14E7D8AF0004697F /* MainWindow-iPhone.xib */,
+				34E95E6214E7EA88004C8C0E /* KontaktViewController.xib */,
+				3468F38914E7D8AF0004697F /* mainView-iPad.xib */,
+				34E95E6614E7EADE004C8C0E /* KontaktViewController-iPad.xib */,
 			);
 			path = cs.lproj;
 			sourceTree = "<group>";

@@ -10,12 +10,11 @@
 
 @implementation comAppDelegate
 
-@synthesize window;
-@synthesize mainComViewController;
+@synthesize window, mainComViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
+
 //    [window addSubview:mainComViewController.view];
     
 //    [window makeKeyAndVisible];    

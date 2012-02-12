@@ -14,12 +14,11 @@
 @interface comAppDelegate : UIResponder <UIApplicationDelegate>
 //@interface comAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> 
 {
-	UIWindow *window;
     comViewController *mainComViewController;
+    UIWindow *window; 
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet comViewController *mainComViewController;
-
+@property (nonatomic, retain) IBOutlet UIWindow *window;           
 
 @end
