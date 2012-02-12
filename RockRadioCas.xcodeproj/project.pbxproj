@@ -20,6 +20,8 @@
 		346DB10714E1F68F00ADC6C3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 346DB10614E1F68F00ADC6C3 /* SystemConfiguration.framework */; };
 		3490015014E0A8400062DD0C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3490014F14E0A8400062DD0C /* MediaPlayer.framework */; };
 		3490015314E1B6400062DD0C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3490015214E1B6400062DD0C /* Settings.bundle */; };
+		34E95E6414E7EA88004C8C0E /* KontaktViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E95E6214E7EA88004C8C0E /* KontaktViewController.xib */; };
+		34E95E6814E7EADE004C8C0E /* KontaktViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E95E6614E7EADE004C8C0E /* KontaktViewController-iPad.xib */; };
 		34F6020914DF1D27005DB8A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F6020814DF1D27005DB8A9 /* UIKit.framework */; };
 		34F6020B14DF1D27005DB8A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F6020A14DF1D27005DB8A9 /* Foundation.framework */; };
 		34F6020D14DF1D27005DB8A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F6020C14DF1D27005DB8A9 /* CoreGraphics.framework */; };
@@ -124,6 +126,10 @@
 		346DB10614E1F68F00ADC6C3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3490014F14E0A8400062DD0C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		3490015214E1B6400062DD0C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		34E95E5F14E7EA88004C8C0E /* cs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cs; path = KontaktViewController.h; sourceTree = "<group>"; };
+		34E95E6114E7EA88004C8C0E /* cs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = cs; path = KontaktViewController.m; sourceTree = "<group>"; };
+		34E95E6314E7EA88004C8C0E /* cs */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = cs; path = KontaktViewController.xib; sourceTree = "<group>"; };
+		34E95E6714E7EADE004C8C0E /* cs */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = cs; path = "KontaktViewController-iPad.xib"; sourceTree = "<group>"; };
 		34F6020414DF1D27005DB8A9 /* RockRadioCas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockRadioCas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34F6020814DF1D27005DB8A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		34F6020A14DF1D27005DB8A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -233,6 +239,8 @@
 		3468F37A14E7D8970004697F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				34E95E5E14E7EA88004C8C0E /* KontaktViewController.h */,
+				34E95E6014E7EA88004C8C0E /* KontaktViewController.m */,
 				3468F37B14E7D8970004697F /* comAppDelegate.h */,
 				3468F37C14E7D8970004697F /* comAppDelegate.m */,
 				3468F37D14E7D8970004697F /* comViewController.h */,
@@ -248,6 +256,8 @@
 			children = (
 				3468F38714E7D8AF0004697F /* FacebookView-iPhone.xib */,
 				3468F38914E7D8AF0004697F /* mainView-iPad.xib */,
+				34E95E6214E7EA88004C8C0E /* KontaktViewController.xib */,
+				34E95E6614E7EADE004C8C0E /* KontaktViewController-iPad.xib */,
 				3468F38B14E7D8AF0004697F /* MainWindow-iPhone.xib */,
 			);
 			path = cs.lproj;
@@ -623,6 +633,8 @@
 				3468F38D14E7D8AF0004697F /* FacebookView-iPhone.xib in Resources */,
 				3468F38E14E7D8AF0004697F /* mainView-iPad.xib in Resources */,
 				3468F38F14E7D8AF0004697F /* MainWindow-iPhone.xib in Resources */,
+				34E95E6414E7EA88004C8C0E /* KontaktViewController.xib in Resources */,
+				34E95E6814E7EADE004C8C0E /* KontaktViewController-iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,6 +677,40 @@
 				3468F38C14E7D8AF0004697F /* cs */,
 			);
 			name = "MainWindow-iPhone.xib";
+			sourceTree = "<group>";
+		};
+		34E95E5E14E7EA88004C8C0E /* KontaktViewController.h */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34E95E5F14E7EA88004C8C0E /* cs */,
+			);
+			name = KontaktViewController.h;
+			path = ../RockRadioCas/cs.lproj;
+			sourceTree = "<group>";
+		};
+		34E95E6014E7EA88004C8C0E /* KontaktViewController.m */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34E95E6114E7EA88004C8C0E /* cs */,
+			);
+			name = KontaktViewController.m;
+			path = ../RockRadioCas/cs.lproj;
+			sourceTree = "<group>";
+		};
+		34E95E6214E7EA88004C8C0E /* KontaktViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34E95E6314E7EA88004C8C0E /* cs */,
+			);
+			name = KontaktViewController.xib;
+			sourceTree = "<group>";
+		};
+		34E95E6614E7EADE004C8C0E /* KontaktViewController-iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34E95E6714E7EADE004C8C0E /* cs */,
+			);
+			name = "KontaktViewController-iPad.xib";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

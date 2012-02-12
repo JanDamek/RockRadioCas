@@ -101,6 +101,7 @@
 							<string key="NSFrame">{{256, 416}, {64, 64}}</string>
 							<reference key="NSSuperview" ref="196984104"/>
 							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView"/>
 							<bool key="IBUIOpaque">NO</bool>
 							<bool key="IBUIClipsSubviews">YES</bool>
 							<int key="IBUIContentMode">4</int>
@@ -460,6 +461,7 @@
 						<string key="NSFrame">{{256, 416}, {64, 64}}</string>
 						<reference key="NSSuperview" ref="1042590262"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">4</int>
@@ -519,6 +521,7 @@
 						<string key="NSFrame">{{32, 247}, {257, 21}}</string>
 						<reference key="NSSuperview" ref="1042590262"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="717057080"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -546,6 +549,7 @@
 						<string key="NSFrame">{{92, 263}, {257, 37}}</string>
 						<reference key="NSSuperview" ref="1042590262"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="351946127"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">3</int>
@@ -716,6 +720,7 @@
 				<string key="NSFrameSize">{768, 1024}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
+				<reference key="NSNextKeyView"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">1</int>
 					<bytes key="NSRGB">MSAxIDEAA</bytes>
@@ -732,6 +737,22 @@
 		</array>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
 			<array class="NSMutableArray" key="connectionRecords">
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">mainComViewController</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="138918906"/>
+					</object>
+					<int key="connectionID">54</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">window</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="191816875"/>
+					</object>
+					<int key="connectionID">55</int>
+				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">hideVolumeButton</string>
@@ -1224,7 +1245,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">53</int>
+			<int key="maxID">55</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">

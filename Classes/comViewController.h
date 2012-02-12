@@ -47,7 +47,7 @@
     
     UIView *landscape;
     UIView *portreit;
-    
+      
 }
 
 @property (retain) IBOutlet UIButton *playButton;

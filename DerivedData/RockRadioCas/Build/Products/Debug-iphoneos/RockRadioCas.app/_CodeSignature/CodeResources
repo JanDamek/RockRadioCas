@@ -316,18 +316,6 @@
 		<data>
 		HiGtLXA8YU1PvaQXRP1cxFvHfQ8=
 		</data>
-		<key>FacebookView-iPhone.nib</key>
-		<data>
-		KqZPfF+Ommun16xd3+fpIeGgvdY=
-		</data>
-		<key>MainWindow-iPhone.nib</key>
-		<data>
-		aoTvcZxT6QSAVaRA2vsn/5rNfU0=
-		</data>
-		<key>MainWindow.nib</key>
-		<data>
-		0WOeRV8eRi1E6+8x/uJVvM0ETYw=
-		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
@@ -358,15 +346,23 @@
 		</data>
 		<key>cs.lproj/FacebookView-iPhone.nib</key>
 		<data>
-		llwOI9162bOxeuBEFLxNvBSOwIo=
+		9AhbvuzsuzI1pxZCcFKR9kmdFmY=
+		</data>
+		<key>cs.lproj/KontaktViewController-iPad.nib</key>
+		<data>
+		x9S9aXsv9hSuwag9KYrXGguHwak=
+		</data>
+		<key>cs.lproj/KontaktViewController.nib</key>
+		<data>
+		HQ+8IfjIEpmGQ9qXqQbV2TMcNLU=
 		</data>
 		<key>cs.lproj/MainWindow-iPhone.nib</key>
 		<data>
-		R1UPDzCZGNv+XYZZ4S9yxCKQTWo=
+		1kzNuNYh1HCgnJB+o85EiPWRfrI=
 		</data>
 		<key>cs.lproj/mainView-iPad.nib</key>
 		<data>
-		UL2g1urJZbESDWggGgMJlVjYsKk=
+		rxOqWtOzNl60b2YaAQ37v+DC71o=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>

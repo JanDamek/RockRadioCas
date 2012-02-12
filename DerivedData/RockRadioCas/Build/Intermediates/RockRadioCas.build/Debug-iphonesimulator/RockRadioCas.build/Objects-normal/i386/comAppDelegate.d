@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comAppDelegate.m \
-  /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comAppDelegate.h \
-  /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comViewController.h
+  /Users/damekjan74/Desktop/RockRadioCas/Classes/comAppDelegate.m \
+  /Users/damekjan74/Desktop/RockRadioCas/Classes/comAppDelegate.h \
+  /Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.h

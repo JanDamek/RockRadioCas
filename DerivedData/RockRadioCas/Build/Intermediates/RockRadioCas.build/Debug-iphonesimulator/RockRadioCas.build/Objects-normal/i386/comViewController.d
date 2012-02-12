@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comViewController.m \
-  /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comViewController.h \
-  /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/Reachability.h
+  /Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m \
+  /Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.h \
+  /Users/damekjan74/Desktop/RockRadioCas/Classes/Reachability.h
