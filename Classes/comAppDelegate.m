@@ -15,9 +15,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
-//    [window addSubview:mainComViewController.view];
+    [window addSubview:mainComViewController.view];
     
-//    [window makeKeyAndVisible];    
+    [window makeKeyAndVisible];    
     
     NSError *sessionError = nil;
     [[AVAudioSession sharedInstance] setDelegate:self];
