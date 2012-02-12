@@ -5,10 +5,10 @@ cCheck dependencies
 cCpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/ResourceRules.plist
 cProcessInfoPlistFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/Info.plist RockRadioCas/RockRadioCas-Info.plist
 cProcessPCH /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/PrecompiledHeaders/RockRadioCas-Prefix-djnkjicfmnvkzleqgvafjfjztfza/RockRadioCas-Prefix.pch.pth RockRadioCas/RockRadioCas-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comViewController.o /Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/main.o /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comAppDelegate.o /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comViewController.o /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/Reachability.o /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/Reachability.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comAppDelegate.o /Users/damekjan74/Desktop/RockRadioCas/Classes/comAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/Reachability.o /Users/damekjan74/Desktop/RockRadioCas/Classes/Reachability.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cLd /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas normal armv7
 cGenerateDSYMFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYM /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas
 cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/320x480_landscape_01.png RockRadioCas/images/iPhone/iPhone_480x320/landscape/images/320x480_landscape_01.png
@@ -50,8 +50,8 @@ cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Bui
 cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/320x480_portrait_11.png RockRadioCas/images/iPhone/iPhone_480x320/portrait/images/320x480_portrait_11.png
 cCpResource "RockRadioCas/images/iPhone/iPhone_480x320/portrait/images/Schema Portrait 320x480.jpg" "DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/Schema Portrait 320x480.jpg"
 cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/960x640_landscape_01.png RockRadioCas/images/iPhone/iPhone_960x640/landscape/images/960x640_landscape_01.png
-cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/960x640_landscape_03.png RockRadioCas/images/iPhone/iPhone_960x640/landscape/images/960x640_landscape_03.png
 cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/960x640_landscape_02.png RockRadioCas/images/iPhone/iPhone_960x640/landscape/images/960x640_landscape_02.png
+cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/960x640_landscape_03.png RockRadioCas/images/iPhone/iPhone_960x640/landscape/images/960x640_landscape_03.png
 cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/960x640_landscape_04.png RockRadioCas/images/iPhone/iPhone_960x640/landscape/images/960x640_landscape_04.png
 cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/960x640_landscape_05.png RockRadioCas/images/iPhone/iPhone_960x640/landscape/images/960x640_landscape_05.png
 cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/960x640_landscape_05_play.png RockRadioCas/images/iPhone/iPhone_960x640/landscape/images/960x640_landscape_05_play.png
@@ -91,13 +91,14 @@ cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Bui
 cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/Default-Landscape~ipad.png Default-Landscape~ipad.png
 cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/Default-Portrait~ipad.png Default-Portrait~ipad.png
 cCpResource RockRadioCas/Settings.bundle DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/Settings.bundle
-cCompileXIB /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/MainWindow-iPhone.xib
 cCompileXIB /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/mainView-iPad.xib
-cCompileXIB /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/FacebookView-iPhone.xib
+cCompileXIB /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/mainView-iPad.xib
 cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/320x480_background.png RockRadioCas/images/iPhone/iPhone_480x320/portrait/images/320x480_background.png
 cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/320x480launch.png RockRadioCas/images/iPhone/iPhone_480x320/320x480launch.png
 cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/Default.png Default.png
 cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/Default@2x.png Default@2x.png
+cCompileXIB /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/FacebookView-iPhone.xib
+cCompileXIB /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/MainWindow-iPhone.xib
 cProcessProductPackaging "/Users/damekjan74/Library/MobileDevice/Provisioning Profiles/5EF254FD-706F-4C92-BE86-A825621A3DE9.mobileprovision" /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/embedded.mobileprovision
 cProcessProductPackaging "/Users/damekjan74/Library/MobileDevice/Provisioning Profiles/5EF254FD-706F-4C92-BE86-A825621A3DE9.mobileprovision" /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/embedded.mobileprovision
 cTouch /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app
@@ -174,6 +175,36 @@ c000000004F2EE3130000000000007F75
 t1328472851
 s32629
 
+N/Users/damekjan74/Desktop/RockRadioCas/Classes/Reachability.m
+c000000004F379C7E0000000000001ED7
+t1329044606
+s7895
+
+N/Users/damekjan74/Desktop/RockRadioCas/Classes/comAppDelegate.h
+c000000004F31A4A50000000000000289
+t1328653477
+s649
+
+N/Users/damekjan74/Desktop/RockRadioCas/Classes/comAppDelegate.m
+c000000004F3461890000000000000B9D
+t1328832905
+s2973
+
+N/Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.h
+c000000004F34630D000000000000072F
+t1328833293
+s1839
+
+N/Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m
+c000000004F34652B0000000000003BD6
+t1328833835
+s15318
+
+N/Users/damekjan74/Desktop/RockRadioCas/Classes/main.m
+c00000000000000000000000000000000
+t2
+s0
+
 N/Users/damekjan74/Desktop/RockRadioCas/Default-Landscape~ipad.png
 c000000004F2EE1A400000000000866E8
 t1328472484
@@ -195,19 +226,27 @@ t1329043845
 s208888
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/Reachability.o
-t1329044943
+t1329045346
 s14576
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/RockRadioCas.LinkFileList
-c000000004F31BC1600000000000002B3
-t1328659478
+c000000004F37A17E00000000000002B3
+t1329045886
 s691
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comAppDelegate.o
-t1328972933
-s53872
+t1329045828
+s53856
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comViewController.o
+t1329045346
+s100208
+
+N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/main-9AFE84C8A98B0B60.o
+t2
+s0
+
+N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/main-CECCC0E62928D5C.o
 t2
 s0
 
@@ -228,16 +267,16 @@ t1328972932
 s3873532
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app
-t1329044940
-s3196
+t1329045362
+s3298
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYM
-t1328973670
+t1329045348
 s102
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/320x480_background.png
-t2
-s0
+t1329045357
+s275899
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/320x480_landscape_01.png
 t1328656827
@@ -384,8 +423,8 @@ t1328656828
 s3292
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/320x480launch.png
-t2
-s0
+t1329045357
+s222618
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/960x640_landscape_01.png
 t1328656828
@@ -540,24 +579,24 @@ t1328656836
 s580843
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/Default.png
-t1328656836
-s275899
+t1329045358
+s222618
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/Default@2x.png
-t1328656834
-s275899
+t1329045358
+s222618
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/FacebookView-iPhone.nib
-t2
-s0
+t1329045356
+s1012
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/Info.plist
 t1328972931
 s1430
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/MainWindow-iPhone.nib
-t1328973675
-s6548
+t1329045354
+s6555
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/MainWindow.nib
 t1328657913
@@ -576,8 +615,8 @@ t1328656820
 s485
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas
-t1328973677
-s68752
+t1329045362
+s69632
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/Schema Portrait 320x480.jpg
 t1328656828
@@ -598,6 +637,10 @@ s266576
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/Settings.bundle
 t1328660758
 s136
+
+N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/cs.lproj/FacebookView-iPhone.nib
+t2
+s0
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/cs.lproj/MainWindow-iPhone.nib
 t1328830136
@@ -649,9 +692,9 @@ t2
 s0
 
 N/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/Reachability.m
-c000000004F379C7E0000000000001ED7
-t1329044606
-s7895
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/RockRadioCas-Prefix.pch
 c000000004F2EFA890000000000000147
@@ -667,29 +710,34 @@ t1328660502
 s136
 
 N/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comAppDelegate.h
-c000000004F31A4A50000000000000289
-t1328653477
-s649
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comAppDelegate.m
-c000000004F3461890000000000000B9D
-t1328832905
-s2973
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comViewController.h
-c000000004F34630D000000000000072F
-t1328833293
-s1839
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comViewController.m
-c000000004F34652B0000000000003BD6
-t1328833835
-s15318
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/FacebookView-iPhone.xib
+c000000004F36EB740000000000001C04
+t1328999284
+s7172
 
 N/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/MainWindow-iPhone.xib
-c000000004F345FC9000000000000D619
-t1328832457
-s54809
+c000000004F379D110000000000011172
+t1329044753
+s70002
 
 N/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/mainView-iPad.xib
 c000000004F344FB6000000000000D9FD
@@ -702,9 +750,9 @@ t1328826910
 s57592
 
 N/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/images/Reachability.h
-c000000004F379F5B0000000000000C90
-t1329045339
-s3216
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/images/Reachability.m
 c00000000000000000000000000000000
@@ -1121,6 +1169,18 @@ c000000004F34643F0000000000000826
 t1328833599
 s2086
 
+CBuild AST from /Users/damekjan74/Desktop/RockRadioCas/Classes/Reachability.m
+r0
+
+CBuild AST from /Users/damekjan74/Desktop/RockRadioCas/Classes/comAppDelegate.m
+r0
+
+CBuild AST from /Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m
+r0
+
+CBuild AST from /Users/damekjan74/Desktop/RockRadioCas/Classes/main.m
+r0
+
 CBuild AST from /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/Reachability.m
 r0
 
@@ -1138,15 +1198,28 @@ r0
 
 CCheck dependencies
 r0
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciescbbd28e1d6e7b441^3047b7e1d6e7b441^---0#1#0#--18"Check dependencies36"ACFCF2E3-ADAA-43BF-932F-6CFB3C04AAEC-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies053693fdd8e7b441^f08b2ffed8e7b441^---0#1#0#--18"Check dependencies36"B0400C6C-CC86-45EB-99AF-7F0CF6A4AB72-
 
 CCodeSign /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app
-s350738158.734013
-e350738162.607382
+s350738687.558987
+e350738688.962853
 r1
 xCodeSign
 x/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"CodeSign DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.appb401bceed6e7b441^e97d9bf2d6e7b441^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/0000000000000000^867"CodeSign DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app    cd /Users/damekjan74/Desktop/RockRadioCas    setenv CODESIGN_ALLOCATE /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign "iPhone Developer: Tomas Vanek (K3ULRSZYVQ)" --resource-rules=/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/ResourceRules.plist --entitlements /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas.xcent /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app36"E4CE3744-B31D-4198-AAE0-C948F804124B-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"CodeSign DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app44338fffd8e7b441^cc7df600d9e7b441^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/0000000000000000^867"CodeSign DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app    cd /Users/damekjan74/Desktop/RockRadioCas    setenv CODESIGN_ALLOCATE /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign "iPhone Developer: Tomas Vanek (K3ULRSZYVQ)" --resource-rules=/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/ResourceRules.plist --entitlements /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas.xcent /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app36"4BF3566A-6EDB-4D36-8EC0-4C31B9DC5695-
+
+CCompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/Reachability.o /Users/damekjan74/Desktop/RockRadioCas/Classes/Reachability.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350738686.520455
+e350738686.721701
+r1
+xCompileC
+xDerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/Reachability.o
+x/Users/damekjan74/Desktop/RockRadioCas/Classes/Reachability.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/damekjan74/Desktop/RockRadioCas/Classes/Reachability.m7c6285fed8e7b441^a378b9fed8e7b441^---0#0#0#-19%DVTDocumentLocation2@77"file://localhost/Users/damekjan74/Desktop/RockRadioCas/Classes/Reachability.m0000000000000000^2996"CompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/Reachability.o Classes/Reachability.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/damekjan74/Desktop/RockRadioCas    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-generated-files.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-own-target-headers.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-all-target-headers.hmap -iquote /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-project-headers.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/include -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/DerivedSources/armv7 -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/DerivedSources -F/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos -include /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/PrecompiledHeaders/RockRadioCas-Prefix-djnkjicfmnvkzleqgvafjfjztfza/RockRadioCas-Prefix.pch -MMD -MT dependencies -MF /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/Reachability.d -c /Users/damekjan74/Desktop/RockRadioCas/Classes/Reachability.m -o /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/Reachability.o36"1E3D7D5C-AED6-42ED-B847-18A6480B37EC-
 
 CCompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/Reachability.o /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/Reachability.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s350738145.788254
@@ -1174,6 +1247,19 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compile /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/images/Reachability.mb0c63905bce6b441^2f156b05bce6b441^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/images/Reachability.m0000000000000000^3020"CompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/Reachability.o RockRadioCas/images/Reachability.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/damekjan74/Desktop/RockRadioCas    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-generated-files.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-own-target-headers.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-all-target-headers.hmap -iquote /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-project-headers.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/include -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/DerivedSources/armv7 -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/DerivedSources -F/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos -include /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/PrecompiledHeaders/RockRadioCas-Prefix-djnkjicfmnvkzleqgvafjfjztfza/RockRadioCas-Prefix.pch -MMD -MT dependencies -MF /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/Reachability.d -c /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/images/Reachability.m -o /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/Reachability.o36"A50818E6-CB35-44E0-8A5C-756CAC6F852A-
 
+CCompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comAppDelegate.o /Users/damekjan74/Desktop/RockRadioCas/Classes/comAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350738628.218874
+e350738628.676775
+r1
+xCompileC
+xDerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comAppDelegate.o
+x/Users/damekjan74/Desktop/RockRadioCas/Classes/comAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/damekjan74/Desktop/RockRadioCas/Classes/comAppDelegate.mb62b38c4d8e7b441^e04ab2c4d8e7b441^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Users/damekjan74/Desktop/RockRadioCas/Classes/comAppDelegate.m0000000000000000^3006"CompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comAppDelegate.o Classes/comAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/damekjan74/Desktop/RockRadioCas    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-generated-files.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-own-target-headers.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-all-target-headers.hmap -iquote /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-project-headers.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/include -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/DerivedSources/armv7 -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/DerivedSources -F/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos -include /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/PrecompiledHeaders/RockRadioCas-Prefix-djnkjicfmnvkzleqgvafjfjztfza/RockRadioCas-Prefix.pch -MMD -MT dependencies -MF /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comAppDelegate.d -c /Users/damekjan74/Desktop/RockRadioCas/Classes/comAppDelegate.m -o /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comAppDelegate.o36"0269C404-F2A8-4528-A6E8-C2662361DD8A-
+
 CCompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comAppDelegate.o /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s350665732.578654
 e350665733.223965
@@ -1186,6 +1272,39 @@ xarmv7
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comAppDelegate.m87e09404bce6b441^a5683905bce6b441^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comAppDelegate.m0000000000000000^3016"CompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comAppDelegate.o RockRadioCas/comAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/damekjan74/Desktop/RockRadioCas    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-generated-files.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-own-target-headers.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-all-target-headers.hmap -iquote /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-project-headers.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/include -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/DerivedSources/armv7 -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/DerivedSources -F/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos -include /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/PrecompiledHeaders/RockRadioCas-Prefix-djnkjicfmnvkzleqgvafjfjztfza/RockRadioCas-Prefix.pch -MMD -MT dependencies -MF /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comAppDelegate.d -c /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comAppDelegate.m -o /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comAppDelegate.o36"B3C0CD8C-FE21-4B22-BD1C-427C29C46269-
+
+CCompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comViewController.o /Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350738686.260941
+e350738686.933121
+r1
+xCompileC
+xDerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comViewController.o
+x/Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m:7:
+o/Users/damekjan74/Desktop/RockRadioCas/Classes/Reachability.h:66:58: warning: declaration of 'struct sockaddr_in' will not be visible outside of this function [3]
+o + (Reachability*) reachabilityWithAddress: (const struct sockaddr_in*) hostAddress;
+o                                                          ^
+o/Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m:258:13:{258:15-258:95}: warning: incompatible pointer types assigning to 'NSURLConnection *__strong' from 'NSData *' [-Wincompatible-pointer-types,3]
+o     xmlFile = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+o             ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m:264:51:{264:51-264:58}: warning: incompatible pointer types sending 'NSURLConnection *__strong' to parameter of type 'NSData *' [-Wincompatible-pointer-types,3]
+o     rssParser = [[NSXMLParser alloc] initWithData:xmlFile];
+o                                                   ^~~~~~~
+o/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h:19:30: note: passing argument to parameter 'data' here [3]
+o - (id)initWithData:(NSData *)data; // create the parser from data
+o                              ^
+o/Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m:265:28:{265:28-265:32}: warning: sending 'comViewController *const __strong' to parameter of incompatible type 'id<NSXMLParserDelegate>' [3]
+o     [rssParser setDelegate:self];
+o                            ^~~~
+o/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h:24:47: note: passing argument to parameter 'delegate' here [3]
+o - (void)setDelegate:(id <NSXMLParserDelegate>)delegate;
+o                                               ^
+o4 warnings generated.
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m260043fed8e7b441^69e1eefed8e7b441^-2061"In file included from /Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m:7:/Users/damekjan74/Desktop/RockRadioCas/Classes/Reachability.h:66:58: warning: declaration of 'struct sockaddr_in' will not be visible outside of this function [3] + (Reachability*) reachabilityWithAddress: (const struct sockaddr_in*) hostAddress;                                                          ^/Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m:258:13:{258:15-258:95}: warning: incompatible pointer types assigning to 'NSURLConnection *__strong' from 'NSData *' [-Wincompatible-pointer-types,3]     xmlFile = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];             ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m:264:51:{264:51-264:58}: warning: incompatible pointer types sending 'NSURLConnection *__strong' to parameter of type 'NSData *' [-Wincompatible-pointer-types,3]     rssParser = [[NSXMLParser alloc] initWithData:xmlFile];                                                   ^~~~~~~/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h:19:30: note: passing argument to parameter 'data' here [3] - (id)initWithData:(NSData *)data; // create the parser from data                              ^/Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m:265:28:{265:28-265:32}: warning: sending 'comViewController *const __strong' to parameter of incompatible type 'id<NSXMLParserDelegate>' [3]     [rssParser setDelegate:self];                            ^~~~/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h:24:47: note: passing argument to parameter 'delegate' here [3] - (void)setDelegate:(id <NSXMLParserDelegate>)delegate;                                               ^4 warnings generated.4(21%IDEActivityLogMessage2@80"Declaration of 'struct sockaddr_in' will not be visible outside of this function-350738686#92#163#2(36%IDEActivityLogHeaderInclusionMessage3@91"In file included from /Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m:7:-350738686#0#92#-0#-23%DVTTextDocumentLocation4@82"file://localhost/Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m0000000000000000^6#18446744073709551615#6#18446744073709551615#18446744073709551615#0#---2@145"Declaration of 'struct sockaddr_in' will not be visible outside of this function in /Users/damekjan74/Desktop/RockRadioCas/Classes/Reachability.h-350738686#18446744073709551615#0#-0#-4@77"file://localhost/Users/damekjan74/Desktop/RockRadioCas/Classes/Reachability.h0000000000000000^65#57#65#57#18446744073709551615#0#---1#-4@77"file://localhost/Users/damekjan74/Desktop/RockRadioCas/Classes/Reachability.h0000000000000000^65#57#65#57#18446744073709551615#0#14"Semantic Issue--2@83"Incompatible pointer types assigning to 'NSURLConnection *__strong' from 'NSData *'-350738686#400#217#-1#-4@82"file://localhost/Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m0000000000000000^257#12#257#12#18446744073709551615#0#14"Semantic Issue1(4@82"file://localhost/Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m0000000000000000^257#14#257#94#18446744073709551615#0#-2@94"Incompatible pointer types sending 'NSURLConnection *__strong' to parameter of type 'NSData *'-350738686#810#228#1(2@41"Passing argument to parameter 'data' here-350738686#1158#198#-0#-4@154"file://localhost/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h0000000000000000^18#29#18#29#18446744073709551615#0#14"Semantic Issue--1#-4@82"file://localhost/Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m0000000000000000^263#50#263#50#18446744073709551615#0#14"Semantic Issue1(4@82"file://localhost/Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m0000000000000000^263#50#263#57#18446744073709551615#0#-2@103"Sending 'comViewController *const __strong' to parameter of incompatible type 'id<NSXMLParserDelegate>'-350738686#1455#208#1(2@45"Passing argument to parameter 'delegate' here-350738686#1731#202#-0#-4@154"file://localhost/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h0000000000000000^23#46#23#46#18446744073709551615#0#14"Semantic Issue--1#-4@82"file://localhost/Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m0000000000000000^264#27#264#27#18446744073709551615#0#14"Semantic Issue1(4@82"file://localhost/Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m0000000000000000^264#27#264#31#18446744073709551615#0#-0#0#0#-19%DVTDocumentLocation5@82"file://localhost/Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m0000000000000000^3021"CompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comViewController.o Classes/comViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/damekjan74/Desktop/RockRadioCas    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-generated-files.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-own-target-headers.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-all-target-headers.hmap -iquote /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-project-headers.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/include -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/DerivedSources/armv7 -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/DerivedSources -F/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos -include /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/PrecompiledHeaders/RockRadioCas-Prefix-djnkjicfmnvkzleqgvafjfjztfza/RockRadioCas-Prefix.pch -MMD -MT dependencies -MF /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comViewController.d -c /Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m -o /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comViewController.o36"D282EF58-3570-451E-9BAE-95326FAC5219-
 
 CCompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comViewController.o /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s350738145.786942
@@ -1220,9 +1339,27 @@ o                                               ^
 o4 warnings generated.
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comViewController.m31b5c9e1d6e7b441^27a45de2d6e7b441^-2093"In file included from /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comViewController.m:7:/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/images/Reachability.h:66:58: warning: declaration of 'struct sockaddr_in' will not be visible outside of this function [3] + (Reachability*) reachabilityWithAddress: (const struct sockaddr_in*) hostAddress;                                                          ^/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comViewController.m:258:13:{258:15-258:95}: warning: incompatible pointer types assigning to 'NSURLConnection *__strong' from 'NSData *' [-Wincompatible-pointer-types,3]     xmlFile = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];             ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comViewController.m:264:51:{264:51-264:58}: warning: incompatible pointer types sending 'NSURLConnection *__strong' to parameter of type 'NSData *' [-Wincompatible-pointer-types,3]     rssParser = [[NSXMLParser alloc] initWithData:xmlFile];                                                   ^~~~~~~/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h:19:30: note: passing argument to parameter 'data' here [3] - (id)initWithData:(NSData *)data; // create the parser from data                              ^/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comViewController.m:265:28:{265:28-265:32}: warning: sending 'comViewController *const __strong' to parameter of incompatible type 'id<NSXMLParserDelegate>' [3]     [rssParser setDelegate:self];                            ^~~~/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h:24:47: note: passing argument to parameter 'delegate' here [3] - (void)setDelegate:(id <NSXMLParserDelegate>)delegate;                                               ^4 warnings generated.4(21%IDEActivityLogMessage2@80"Declaration of 'struct sockaddr_in' will not be visible outside of this function-350738146#97#175#2(36%IDEActivityLogHeaderInclusionMessage3@96"In file included from /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comViewController.m:7:-350738146#0#97#-0#-23%DVTTextDocumentLocation4@87"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comViewController.m0000000000000000^6#18446744073709551615#6#18446744073709551615#18446744073709551615#0#---2@157"Declaration of 'struct sockaddr_in' will not be visible outside of this function in /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/images/Reachability.h-350738146#18446744073709551615#0#-0#-4@89"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/images/Reachability.h0000000000000000^65#57#65#57#18446744073709551615#0#---1#-4@89"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/images/Reachability.h0000000000000000^65#57#65#57#18446744073709551615#0#14"Semantic Issue--2@83"Incompatible pointer types assigning to 'NSURLConnection *__strong' from 'NSData *'-350738146#417#222#-1#-4@87"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comViewController.m0000000000000000^257#12#257#12#18446744073709551615#0#14"Semantic Issue1(4@87"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comViewController.m0000000000000000^257#14#257#94#18446744073709551615#0#-2@94"Incompatible pointer types sending 'NSURLConnection *__strong' to parameter of type 'NSData *'-350738146#832#233#1(2@41"Passing argument to parameter 'data' here-350738146#1185#198#-0#-4@154"file://localhost/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h0000000000000000^18#29#18#29#18446744073709551615#0#14"Semantic Issue--1#-4@87"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comViewController.m0000000000000000^263#50#263#50#18446744073709551615#0#14"Semantic Issue1(4@87"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comViewController.m0000000000000000^263#50#263#57#18446744073709551615#0#-2@103"Sending 'comViewController *const __strong' to parameter of incompatible type 'id<NSXMLParserDelegate>'-350738146#1482#213#1(2@45"Passing argument to parameter 'delegate' here-350738146#1763#202#-0#-4@154"file://localhost/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h0000000000000000^23#46#23#46#18446744073709551615#0#14"Semantic Issue--1#-4@87"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comViewController.m0000000000000000^264#27#264#27#18446744073709551615#0#14"Semantic Issue1(4@87"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comViewController.m0000000000000000^264#27#264#31#18446744073709551615#0#-0#0#0#-19%DVTDocumentLocation5@87"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comViewController.m0000000000000000^3031"CompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comViewController.o RockRadioCas/comViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/damekjan74/Desktop/RockRadioCas    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-generated-files.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-own-target-headers.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-all-target-headers.hmap -iquote /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-project-headers.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/include -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/DerivedSources/armv7 -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/DerivedSources -F/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos -include /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/PrecompiledHeaders/RockRadioCas-Prefix-djnkjicfmnvkzleqgvafjfjztfza/RockRadioCas-Prefix.pch -MMD -MT dependencies -MF /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comViewController.d -c /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/comViewController.m -o /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comViewController.o36"32721BB2-341F-4E8C-8572-692A651316B1-
 
+CCompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/main-9AFE84C8A98B0B60.o /Users/damekjan74/Desktop/RockRadioCas/Classes/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/main-CECCC0E62928D5C.o /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350738628.218729
+e350738628.269265
+r0
+xCompileC
+xDerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/main-CECCC0E62928D5C.o
+x/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oclang: error: no such file or directory: '/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/main.m'
+oclang: error: no input files
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/main.m3b3438c4d8e7b441^12f744c4d8e7b441^-226"clang: error: no such file or directory: '/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/main.m'clang: error: no input filesCommand /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang failed with exit code 11(21%IDEActivityLogMessage2@94"Command /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang failed with exit code 1-350738628#18446744073709551615#0#-2#--29"Apple LLVM compiler 3.0 Error--0#0#0#-19%DVTDocumentLocation3@74"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/main.m00f4002bddffdf42^3014"CompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/main-CECCC0E62928D5C.o RockRadioCas/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/damekjan74/Desktop/RockRadioCas    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-generated-files.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-own-target-headers.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-all-target-headers.hmap -iquote /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-project-headers.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/include -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/DerivedSources/armv7 -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/DerivedSources -F/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos -include /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/PrecompiledHeaders/RockRadioCas-Prefix-djnkjicfmnvkzleqgvafjfjztfza/RockRadioCas-Prefix.pch -MMD -MT dependencies -MF /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/main-CECCC0E62928D5C.d -c /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/main.m -o /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/main-CECCC0E62928D5C.o36"203249CA-9ABB-420B-947A-324100869071-
+
 CCompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/main.o /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s350665732.581304
-e350665733.217788
+s350738686.261272
+e350738686.492809
 r1
 xCompileC
 xDerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/main.o
@@ -1231,7 +1368,7 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/main.mf2ee9404bce6b441^bad93705bce6b441^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/main.m0000000000000000^2966"CompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/main.o RockRadioCas/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/damekjan74/Desktop/RockRadioCas    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-generated-files.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-own-target-headers.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-all-target-headers.hmap -iquote /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-project-headers.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/include -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/DerivedSources/armv7 -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/DerivedSources -F/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos -include /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/PrecompiledHeaders/RockRadioCas-Prefix-djnkjicfmnvkzleqgvafjfjztfza/RockRadioCas-Prefix.pch -MMD -MT dependencies -MF /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/main.d -c /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/main.m -o /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/main.o36"999CA87D-F736-49D3-87DD-4B52CF7B3C17-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/main.m040043fed8e7b441^90687efed8e7b441^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/main.m0000000000000000^2966"CompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/main.o RockRadioCas/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/damekjan74/Desktop/RockRadioCas    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-generated-files.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-own-target-headers.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-all-target-headers.hmap -iquote /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas-project-headers.hmap -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/include -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/DerivedSources/armv7 -I/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/DerivedSources -F/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos -include /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/PrecompiledHeaders/RockRadioCas-Prefix-djnkjicfmnvkzleqgvafjfjztfza/RockRadioCas-Prefix.pch -MMD -MT dependencies -MF /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/main.d -c /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/main.m -o /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/main.o36"662DC9E6-B46B-45E2-BB86-51A82C294B23-
 
 CCompileXIB /Users/damekjan74/Desktop/RockRadioCas/../../Documents/RockRadioCasLast/cs.lproj/StreamingView.xib
 r0
@@ -1285,13 +1422,45 @@ xCompileXIB
 x/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/MainWindow.xib
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compiling /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/MainWindow.xibf8fd6378ede1b441^f8a5da79ede1b441^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/MainWindow.xib0000000000000000^691"CompileXIB RockRadioCas/MainWindow.xib    cd /Users/damekjan74/Desktop/RockRadioCas    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/MainWindow.nib /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/MainWindow.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk36"5F3D5F62-7B88-4A34-90C9-9588C8EEC720-
 
+CCompileXIB /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/FacebookView-iPhone.xib
+s350738687.165302
+e350738687.394187
+r1
+xCompileXIB
+x/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/FacebookView-iPhone.xib
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compiling /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/FacebookView-iPhone.xib726b2affd8e7b441^edf364ffd8e7b441^-2016"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)-0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/FacebookView-iPhone.xib0000000000000000^745"CompileXIB RockRadioCas/cs.lproj/FacebookView-iPhone.xib    cd /Users/damekjan74/Desktop/RockRadioCas    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/cs.lproj/FacebookView-iPhone.nib /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/FacebookView-iPhone.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk36"F14EE318-0DAD-4A3D-934D-D52B6692E4BD-
+
 CCompileXIB /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/MainWindow-iPhone.xib
-s350522935.580271
-e350522936.442039
+s350738687.165898
+e350738687.476136
 r1
 xCompileXIB
 x/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/MainWindow-iPhone.xib
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compiling /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/MainWindow-iPhone.xibb9a694378ee4b441^043871388ee4b441^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/MainWindow-iPhone.xib0000000000000000^739"CompileXIB RockRadioCas/cs.lproj/MainWindow-iPhone.xib    cd /Users/damekjan74/Desktop/RockRadioCas    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/cs.lproj/MainWindow-iPhone.nib /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/MainWindow-iPhone.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk36"A114C8FA-FC3F-4DF9-B1BF-37F62485FDCE-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compiling /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/MainWindow-iPhone.xib8b882affd8e7b441^80f479ffd8e7b441^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/MainWindow-iPhone.xib0000000000000000^739"CompileXIB RockRadioCas/cs.lproj/MainWindow-iPhone.xib    cd /Users/damekjan74/Desktop/RockRadioCas    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/cs.lproj/MainWindow-iPhone.nib /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/MainWindow-iPhone.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk36"6FED3929-D364-4C99-A97F-7A86050145FC-
 
 CCompileXIB /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/mainView-iPad.xib
 s350521153.042661
@@ -2079,23 +2248,23 @@ x/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/Model.xcdatamodeld
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection138"DataModelVersionCompile DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/Model.momd RockRadioCas/Model.xcdatamodeldff5e264cd5e7b441^69e2914cd5e7b441^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/Model.xcdatamodeld/0000000000000000^674"DataModelVersionCompile DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/Model.momd RockRadioCas/Model.xcdatamodeld    cd /Users/damekjan74/Desktop/RockRadioCas    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/momc -XD_MOMC_SDKROOT=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -MOMC_PLATFORMS iphonesimulator -MOMC_PLATFORMS iphoneos /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/Model.xcdatamodeld /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/Model.momd36"24BED77C-7F01-4E49-B220-1C41C377CB4D-
 
 CGenerateDSYMFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYM /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas
-s350738148.705996
-e350738148.819997
+s350738687.051380
+e350738687.100138
 r1
 xGenerateDSYMFile
 x/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYM
 x/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection126"Generating /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYMd3dab4e4d6e7b441^53ebd1e4d6e7b441^---0#0#0#-19%DVTDocumentLocation2@132"file://localhost/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYM/0000000000000000^624"GenerateDSYMFile DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYM DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas    cd /Users/damekjan74/Desktop/RockRadioCas    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas -o /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYM36"7C0A6CAA-3260-421D-BF73-7F1AFBB442B2-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection126"Generating /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYMc8410dffd8e7b441^c6a219ffd8e7b441^---0#0#0#-19%DVTDocumentLocation2@132"file://localhost/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYM/0000000000000000^624"GenerateDSYMFile DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYM DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas    cd /Users/damekjan74/Desktop/RockRadioCas    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas -o /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYM36"CCDD17B9-FEE3-4423-A961-ACE7FDF90820-
 
 CLd /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas normal armv7
-s350738146.348110
-e350738148.699071
+s350738686.940088
+e350738687.030389
 r1
 xLd
 x/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas
 xnormal
 xarmv7
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"Link /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas95d55ce2d6e7b441^94f6b2e4d6e7b441^---0#0#0#--1176"Ld DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas normal armv7    cd /Users/damekjan74/Desktop/RockRadioCas    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -L/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos -F/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos -filelist /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/RockRadioCas.LinkFileList -dead_strip -fobjc-arc -miphoneos-version-min=4.3 -framework SystemConfiguration -framework MediaPlayer -framework AVFoundation -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas36"D6D4A53A-DE7F-4892-95AF-FAA4871A4C95-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"Link /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas1ec6f0fed8e7b441^46d309ffd8e7b441^---0#0#0#--1176"Ld DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas normal armv7    cd /Users/damekjan74/Desktop/RockRadioCas    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -L/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos -F/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos -filelist /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/RockRadioCas.LinkFileList -dead_strip -fobjc-arc -miphoneos-version-min=4.3 -framework SystemConfiguration -framework MediaPlayer -framework AVFoundation -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas36"3A29BCD1-69CF-4348-A3C5-DE1AC6B9EF1A-
 
 CProcessInfoPlistFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/Info.plist RockRadioCas/RockRadioCas-Info.plist
 s350665731.618921
@@ -2157,10 +2326,10 @@ x/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermedi
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection229"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas.xcentdba43e07bce6b441^103c4e07bce6b441^---0#0#0#-19%DVTDocumentLocation2@171"file://localhost/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas.xcent0000000000000000^710"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas.xcent    cd /Users/damekjan74/Desktop/RockRadioCas    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist -entitlements -format xml -o /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas.xcent36"0B361DC9-06C1-49FD-9843-8314FF807898-
 
 CTouch /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app
-s350738158.654397
-e350738158.717250
+s350738687.521705
+e350738687.539177
 r1
 xTouch
 x/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Touch /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.appe19aa7eed6e7b441^b29db7eed6e7b441^---0#0#0#--381"Touch DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app    cd /Users/damekjan74/Desktop/RockRadioCas    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app36"00B9B014-A129-43E8-949C-F524D45005E4-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Touch /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app6ea385ffd8e7b441^8b188affd8e7b441^---0#0#0#--381"Touch DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app    cd /Users/damekjan74/Desktop/RockRadioCas    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app36"FE97DB25-3B01-4762-A10B-681E18496691-
 

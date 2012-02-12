@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/Reachability.m \
-  /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/images/Reachability.h
+  /Users/damekjan74/Desktop/RockRadioCas/Classes/Reachability.m \
+  /Users/damekjan74/Desktop/RockRadioCas/Classes/Reachability.h
