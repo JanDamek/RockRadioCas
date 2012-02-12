@@ -68,6 +68,7 @@ typedef enum {
 //reachabilityForLocalWiFi- checks whether a local wifi connection is available.
 + (Reachability*) reachabilityForLocalWiFi;
 
+- (NetworkStatus) currentReachabilityStatus;
 @end
 
 

@@ -59,9 +59,9 @@
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSCustomResource" key="IBUIImage" id="908634631">
+						<object class="NSCustomResource" key="IBUIImage" id="359354686">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">Default.png</string>
+							<string key="NSResourceName">320x480_background.png</string>
 						</object>
 					</object>
 					<object class="IBUIImageView" id="132699821">
@@ -107,7 +107,6 @@
 						<string key="NSFrame">{{256, 416}, {64, 64}}</string>
 						<reference key="NSSuperview" ref="60589082"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">4</int>
@@ -179,7 +178,6 @@
 						<string key="NSFrame">{{32, 247}, {257, 21}}</string>
 						<reference key="NSSuperview" ref="60589082"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -435,7 +433,6 @@
 				<string key="NSFrameSize">{320, 480}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">1</int>
 					<bytes key="NSRGB">MSAxIDEAA</bytes>
@@ -464,7 +461,7 @@
 							<bool key="IBUIClipsSubviews">YES</bool>
 							<bool key="IBUIMultipleTouchEnabled">YES</bool>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-							<reference key="IBUIImage" ref="908634631"/>
+							<reference key="IBUIImage" ref="359354686"/>
 						</object>
 						<object class="IBUIImageView" id="25760320">
 							<reference key="NSNextResponder" ref="117367884"/>
@@ -503,7 +500,6 @@
 							<string key="NSFrame">{{256, 416}, {64, 64}}</string>
 							<reference key="NSSuperview" ref="117367884"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<bool key="IBUIOpaque">NO</bool>
 							<bool key="IBUIClipsSubviews">YES</bool>
 							<int key="IBUIContentMode">4</int>
@@ -1560,6 +1556,7 @@
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<object class="NSArray" key="dict.sortedKeys">
 				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>320x480_background.png</string>
 				<string>320x480_portrait_05.png</string>
 				<string>320x480_portrait_05_play.png</string>
 				<string>320x480_portrait_06.png</string>
@@ -1569,20 +1566,19 @@
 				<string>320x480_portrait_08.png</string>
 				<string>320x480_portrait_08_press.png</string>
 				<string>320x480_portrait_09.png</string>
-				<string>Default.png</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>{64, 64}</string>
-				<string>{64, 64}</string>
-				<string>{64, 64}</string>
-				<string>{64, 64}</string>
-				<string>{64, 64}</string>
-				<string>{64, 64}</string>
-				<string>{64, 64}</string>
-				<string>{64, 64}</string>
-				<string>{64, 64}</string>
 				<string>{320, 480}</string>
+				<string>{64, 64}</string>
+				<string>{64, 64}</string>
+				<string>{64, 64}</string>
+				<string>{64, 64}</string>
+				<string>{64, 64}</string>
+				<string>{64, 64}</string>
+				<string>{64, 64}</string>
+				<string>{64, 64}</string>
+				<string>{64, 64}</string>
 			</object>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">933</string>

@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3437844914E721670025BC11 /* FacebookView-iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3437844814E721670025BC11 /* FacebookView-iPhone.xib */; };
-		3437845114E7260D0025BC11 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3437844F14E7260C0025BC11 /* Model.xcdatamodeld */; };
-		346DB10314E1F26000ADC6C3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 346DB10214E1F26000ADC6C3 /* Reachability.m */; };
+		3468F36914E7D1AD0004697F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3468F36714E7D1AD0004697F /* Reachability.m */; };
+		3468F36E14E7D1C60004697F /* 320x480_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3468F36D14E7D1C60004697F /* 320x480_background.png */; };
+		3468F37014E7D2150004697F /* 320x480launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 3468F36F14E7D2150004697F /* 320x480launch.png */; };
+		3468F37714E7D4B40004697F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3468F37614E7D4B40004697F /* Default.png */; };
+		3468F37914E7D4BD0004697F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3468F37814E7D4BD0004697F /* Default@2x.png */; };
 		346DB10714E1F68F00ADC6C3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 346DB10614E1F68F00ADC6C3 /* SystemConfiguration.framework */; };
 		3490015014E0A8400062DD0C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3490014F14E0A8400062DD0C /* MediaPlayer.framework */; };
 		3490015314E1B6400062DD0C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3490015214E1B6400062DD0C /* Settings.bundle */; };
@@ -99,17 +102,18 @@
 		34F602E014DF1E68005DB8A9 /* 960x640_portrait_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F6028B14DF1E68005DB8A9 /* 960x640_portrait_11.png */; };
 		34F602E114DF1E68005DB8A9 /* Schema Portrait 960x640.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34F6028C14DF1E68005DB8A9 /* Schema Portrait 960x640.jpg */; };
 		34F602E714DF1F13005DB8A9 /* icon_cas114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F602E614DF1F13005DB8A9 /* icon_cas114x114.png */; };
-		34F602E914DF1F1B005DB8A9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F602E814DF1F1B005DB8A9 /* Default@2x.png */; };
 		34F602ED14DF1F5F005DB8A9 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F602EA14DF1F5F005DB8A9 /* Default-Landscape~ipad.png */; };
 		34F602EE14DF1F5F005DB8A9 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F602EB14DF1F5F005DB8A9 /* Default-Portrait~ipad.png */; };
-		34F602EF14DF1F5F005DB8A9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F602EC14DF1F5F005DB8A9 /* Default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3437844814E721670025BC11 /* FacebookView-iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "FacebookView-iPhone.xib"; sourceTree = "<group>"; };
-		3437845014E7260D0025BC11 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		3468F36714E7D1AD0004697F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = RockRadioCas/Reachability.m; sourceTree = SOURCE_ROOT; };
+		3468F36D14E7D1C60004697F /* 320x480_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 320x480_background.png; sourceTree = "<group>"; };
+		3468F36F14E7D2150004697F /* 320x480launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 320x480launch.png; path = RockRadioCas/images/iPhone/iPhone_480x320/320x480launch.png; sourceTree = SOURCE_ROOT; };
+		3468F37614E7D4B40004697F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3468F37814E7D4BD0004697F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		346DB10114E1F26000ADC6C3 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = images/Reachability.h; sourceTree = "<group>"; };
-		346DB10214E1F26000ADC6C3 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = images/Reachability.m; sourceTree = "<group>"; };
 		346DB10414E1F61E00ADC6C3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		346DB10614E1F68F00ADC6C3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3490014F14E0A8400062DD0C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -205,10 +209,8 @@
 		34F6028B14DF1E68005DB8A9 /* 960x640_portrait_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 960x640_portrait_11.png; sourceTree = "<group>"; };
 		34F6028C14DF1E68005DB8A9 /* Schema Portrait 960x640.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Schema Portrait 960x640.jpg"; sourceTree = "<group>"; };
 		34F602E614DF1F13005DB8A9 /* icon_cas114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_cas114x114.png; sourceTree = "<group>"; };
-		34F602E814DF1F1B005DB8A9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		34F602EA14DF1F5F005DB8A9 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		34F602EB14DF1F5F005DB8A9 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
-		34F602EC14DF1F5F005DB8A9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,10 +233,10 @@
 		34F601F914DF1D27005DB8A9 = {
 			isa = PBXGroup;
 			children = (
+				3468F37814E7D4BD0004697F /* Default@2x.png */,
+				3468F37614E7D4B40004697F /* Default.png */,
 				34F602EA14DF1F5F005DB8A9 /* Default-Landscape~ipad.png */,
 				34F602EB14DF1F5F005DB8A9 /* Default-Portrait~ipad.png */,
-				34F602EC14DF1F5F005DB8A9 /* Default.png */,
-				34F602E814DF1F1B005DB8A9 /* Default@2x.png */,
 				34F602E614DF1F13005DB8A9 /* icon_cas114x114.png */,
 				34F6022E14DF1E68005DB8A9 /* images */,
 				34F6020E14DF1D27005DB8A9 /* RockRadioCas */,
@@ -268,13 +270,12 @@
 		34F6020E14DF1D27005DB8A9 /* RockRadioCas */ = {
 			isa = PBXGroup;
 			children = (
+				3468F36714E7D1AD0004697F /* Reachability.m */,
 				346DB10114E1F26000ADC6C3 /* Reachability.h */,
-				346DB10214E1F26000ADC6C3 /* Reachability.m */,
 				34F6021714DF1D27005DB8A9 /* comAppDelegate.h */,
 				34F6021814DF1D27005DB8A9 /* comAppDelegate.m */,
 				3490016514E1DBFC0062DD0C /* MainWindow-iPhone.xib */,
 				3437844814E721670025BC11 /* FacebookView-iPhone.xib */,
-				3437844F14E7260C0025BC11 /* Model.xcdatamodeld */,
 				34F6022014DF1D27005DB8A9 /* comViewController.h */,
 				34F6022114DF1D27005DB8A9 /* comViewController.m */,
 				3490016714E1E2E00062DD0C /* mainView-iPad.xib */,
@@ -366,6 +367,8 @@
 		34F6024E14DF1E68005DB8A9 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				3468F36F14E7D2150004697F /* 320x480launch.png */,
+				3468F36D14E7D1C60004697F /* 320x480_background.png */,
 				34F6024F14DF1E68005DB8A9 /* 320x480_portrait_01.png */,
 				34F6025014DF1E68005DB8A9 /* 320x480_portrait_02.png */,
 				34F6025114DF1E68005DB8A9 /* 320x480_portrait_03.png */,
@@ -595,14 +598,16 @@
 				34F602E014DF1E68005DB8A9 /* 960x640_portrait_11.png in Resources */,
 				34F602E114DF1E68005DB8A9 /* Schema Portrait 960x640.jpg in Resources */,
 				34F602E714DF1F13005DB8A9 /* icon_cas114x114.png in Resources */,
-				34F602E914DF1F1B005DB8A9 /* Default@2x.png in Resources */,
 				34F602ED14DF1F5F005DB8A9 /* Default-Landscape~ipad.png in Resources */,
 				34F602EE14DF1F5F005DB8A9 /* Default-Portrait~ipad.png in Resources */,
-				34F602EF14DF1F5F005DB8A9 /* Default.png in Resources */,
 				3490015314E1B6400062DD0C /* Settings.bundle in Resources */,
 				3490016614E1DBFC0062DD0C /* MainWindow-iPhone.xib in Resources */,
 				3490016914E1E2E00062DD0C /* mainView-iPad.xib in Resources */,
 				3437844914E721670025BC11 /* FacebookView-iPhone.xib in Resources */,
+				3468F36E14E7D1C60004697F /* 320x480_background.png in Resources */,
+				3468F37014E7D2150004697F /* 320x480launch.png in Resources */,
+				3468F37714E7D4B40004697F /* Default.png in Resources */,
+				3468F37914E7D4BD0004697F /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,8 +621,7 @@
 				34F6021514DF1D27005DB8A9 /* main.m in Sources */,
 				34F6021914DF1D27005DB8A9 /* comAppDelegate.m in Sources */,
 				34F6022214DF1D27005DB8A9 /* comViewController.m in Sources */,
-				346DB10314E1F26000ADC6C3 /* Reachability.m in Sources */,
-				3437845114E7260D0025BC11 /* Model.xcdatamodeld in Sources */,
+				3468F36914E7D1AD0004697F /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -735,19 +739,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		3437844F14E7260C0025BC11 /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				3437845014E7260D0025BC11 /* Model.xcdatamodel */,
-			);
-			currentVersion = 3437845014E7260D0025BC11 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 34F601FB14DF1D27005DB8A9 /* Project object */;
 }

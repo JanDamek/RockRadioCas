@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>320x480_background.png</key>
+		<data>
+		W1uwK+da46Lz1XUpplwpu0jxURQ=
+		</data>
 		<key>320x480_landscape_01.png</key>
 		<data>
 		8rWfVA8pZRa4WmeZH1joKQa7PHo=
@@ -147,6 +151,10 @@
 		<key>320x480_portrait_11.png</key>
 		<data>
 		JjRbTbFbvoeQYdk6A7vJFa9Xf+Y=
+		</data>
+		<key>320x480launch.png</key>
+		<data>
+		HiGtLXA8YU1PvaQXRP1cxFvHfQ8=
 		</data>
 		<key>960x640_landscape_01.png</key>
 		<data>
@@ -302,15 +310,19 @@
 		</data>
 		<key>Default.png</key>
 		<data>
-		W1uwK+da46Lz1XUpplwpu0jxURQ=
+		HiGtLXA8YU1PvaQXRP1cxFvHfQ8=
 		</data>
 		<key>Default@2x.png</key>
 		<data>
-		W1uwK+da46Lz1XUpplwpu0jxURQ=
+		HiGtLXA8YU1PvaQXRP1cxFvHfQ8=
+		</data>
+		<key>FacebookView-iPhone.nib</key>
+		<data>
+		KqZPfF+Ommun16xd3+fpIeGgvdY=
 		</data>
 		<key>MainWindow-iPhone.nib</key>
 		<data>
-		UGuTOxVWobjmh9gqNqiygWp/ADw=
+		aoTvcZxT6QSAVaRA2vsn/5rNfU0=
 		</data>
 		<key>MainWindow.nib</key>
 		<data>
