@@ -22,7 +22,7 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
 
 @implementation comViewController
 
-@synthesize player, playerItem, landscape, portreit;
+@synthesize player, playerItem, landscape, portreit, wwwButton, facebookButton;
 @synthesize nazevSkladbyLabel, interpretLabel;
 @synthesize playButton, stopButton, showVolumeButton, hideVolumeButton;
 
@@ -130,6 +130,16 @@ NSString *kTimedMetadataKey	= @"currentItem.timedMetadata";
 {
     self.playButton.enabled = NO;
     self.stopButton.enabled = NO;
+}
+
+- (IBAction)wwwButtonTouch:(id)sender
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.casrock.cz"]];   
+}
+
+- (IBAction)facebookButtonTouch:(id)sender
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.facebook.com/casrock.cz"]];
 }
 
 - (void)alertWiFi

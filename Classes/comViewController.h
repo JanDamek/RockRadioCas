@@ -54,6 +54,9 @@
 @property (nonatomic, retain) IBOutlet UIButton *stopButton;
 @property (nonatomic, retain) IBOutlet UIButton *showVolumeButton;
 @property (nonatomic, retain) IBOutlet UIButton *hideVolumeButton;
+@property (nonatomic, retain) IBOutlet UIButton *wwwButton;
+@property (nonatomic, retain) IBOutlet UIButton *facebookButton;
+
 @property (nonatomic, retain) IBOutlet UIView *portreit;
 @property (nonatomic, retain) IBOutlet UIView *landscape;
 
@@ -68,6 +71,8 @@
 - (void)initPlayer;
 - (IBAction)showVolume:(id)sender;
 - (IBAction)hideVolume:(id)sender;
+- (IBAction)wwwButtonTouch:(id)sender;
+- (IBAction)facebookButtonTouch:(id)sender;
 
 - (void)parseXMLFileAtURL:(NSString *)URL;
 
