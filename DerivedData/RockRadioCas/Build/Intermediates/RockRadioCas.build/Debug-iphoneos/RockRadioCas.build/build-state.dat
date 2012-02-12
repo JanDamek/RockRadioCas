@@ -5,8 +5,8 @@ cCheck dependencies
 cCpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/ResourceRules.plist
 cProcessInfoPlistFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/Info.plist RockRadioCas/RockRadioCas-Info.plist
 cProcessPCH /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/PrecompiledHeaders/RockRadioCas-Prefix-djnkjicfmnvkzleqgvafjfjztfza/RockRadioCas-Prefix.pch.pth RockRadioCas/RockRadioCas-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comAppDelegate.o /Users/damekjan74/Desktop/RockRadioCas/Classes/comAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/main.o /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comAppDelegate.o /Users/damekjan74/Desktop/RockRadioCas/Classes/comAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/comViewController.o /Users/damekjan74/Desktop/RockRadioCas/Classes/comViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/Reachability.o /Users/damekjan74/Desktop/RockRadioCas/Classes/Reachability.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cLd /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas normal armv7
@@ -81,8 +81,8 @@ cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Bui
 cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/960x640_portrait_07.png RockRadioCas/images/iPhone/iPhone_960x640/portrait/images/960x640_portrait_07.png
 cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/960x640_portrait_07_press.png RockRadioCas/images/iPhone/iPhone_960x640/portrait/images/960x640_portrait_07_press.png
 cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/960x640_portrait_08.png RockRadioCas/images/iPhone/iPhone_960x640/portrait/images/960x640_portrait_08.png
-cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/960x640_portrait_09.png RockRadioCas/images/iPhone/iPhone_960x640/portrait/images/960x640_portrait_09.png
 cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/960x640_portrait_08_press.png RockRadioCas/images/iPhone/iPhone_960x640/portrait/images/960x640_portrait_08_press.png
+cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/960x640_portrait_09.png RockRadioCas/images/iPhone/iPhone_960x640/portrait/images/960x640_portrait_09.png
 cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/960x640_portrait_09_press.png RockRadioCas/images/iPhone/iPhone_960x640/portrait/images/960x640_portrait_09_press.png
 cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/960x640_portrait_10.png RockRadioCas/images/iPhone/iPhone_960x640/portrait/images/960x640_portrait_10.png
 cCopyPNGFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/960x640_portrait_11.png RockRadioCas/images/iPhone/iPhone_960x640/portrait/images/960x640_portrait_11.png
@@ -271,7 +271,7 @@ t1328972932
 s3873532
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app
-t1329048875
+t1329049311
 s3298
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYM
@@ -619,7 +619,7 @@ t1328656820
 s485
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas
-t1329048875
+t1329049311
 s69616
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/Schema Portrait 320x480.jpg
@@ -647,16 +647,16 @@ t1329045887
 s1012
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/cs.lproj/MainWindow-iPhone.nib
-t1329045887
-s6562
+t1329049309
+s6555
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/cs.lproj/StreamingView.nib
 t2
 s0
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/cs.lproj/mainView-iPad.nib
-t2
-s0
+t1329049307
+s6588
 
 N/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/embedded.mobileprovision
 t1328656837
@@ -734,9 +734,9 @@ t2
 s0
 
 N/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/FacebookView-iPhone.xib
-c000000004F36EB740000000000001C04
-t1328999284
-s7172
+c000000004F37B15A0000000000001B79
+t1329049946
+s7033
 
 N/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/MainWindow-iPhone.xib
 c000000004F37AEAC0000000000011172
@@ -744,9 +744,9 @@ t1329049260
 s70002
 
 N/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/mainView-iPad.xib
-c000000004F37AEC5000000000000F6E8
-t1329049285
-s63208
+c000000004F37B15A000000000000F790
+t1329049946
+s63376
 
 N/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/en.lproj/MainWindow-iPhone.xib
 c000000004F344A1E000000000000E0F8
@@ -1202,16 +1202,16 @@ r0
 
 CCheck dependencies
 r0
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciese6c9315be6e7b441^696f6c5be6e7b441^---0#1#0#--18"Check dependencies36"7AD6DB6C-8A26-42D8-9047-62A411C1C4D8-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies3d9818dbe8e7b441^efcb1ddbe8e7b441^---0#1#0#--18"Check dependencies36"19DABAC5-5FEB-4D8D-BFFA-2295FF21615D-
 
 CCodeSign /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app
-s350742109.491258
-e350742111.097845
+s350742749.615515
+e350742751.619589
 r1
 xCodeSign
 x/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app
 o/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app: replacing existing signature
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"CodeSign DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.appecdb7d5de6e7b441^a20c195fe6e7b441^-141"/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app: replacing existing signature-0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/0000000000000000^867"CodeSign DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app    cd /Users/damekjan74/Desktop/RockRadioCas    setenv CODESIGN_ALLOCATE /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign "iPhone Developer: Tomas Vanek (K3ULRSZYVQ)" --resource-rules=/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/ResourceRules.plist --entitlements /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas.xcent /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app36"1AA67991-1893-43E1-A6C6-495BFDAFCD53-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"CodeSign DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app43a99ddde8e7b441^f7ad9edfe8e7b441^-141"/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app: replacing existing signature-0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/0000000000000000^867"CodeSign DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app    cd /Users/damekjan74/Desktop/RockRadioCas    setenv CODESIGN_ALLOCATE /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign "iPhone Developer: Tomas Vanek (K3ULRSZYVQ)" --resource-rules=/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/ResourceRules.plist --entitlements /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas.xcent /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app36"F147ACB5-2149-4C67-9044-DEA64DD35F05-
 
 CCompileC DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/Objects-normal/armv7/Reachability.o /Users/damekjan74/Desktop/RockRadioCas/Classes/Reachability.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s350738686.520455
@@ -1428,8 +1428,8 @@ x/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/MainWindow.xib
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compiling /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/MainWindow.xibf8fd6378ede1b441^f8a5da79ede1b441^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/MainWindow.xib0000000000000000^691"CompileXIB RockRadioCas/MainWindow.xib    cd /Users/damekjan74/Desktop/RockRadioCas    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/MainWindow.nib /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/MainWindow.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk36"5F3D5F62-7B88-4A34-90C9-9588C8EEC720-
 
 CCompileXIB /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/FacebookView-iPhone.xib
-s350738687.165302
-e350738687.394187
+s350742747.383692
+e350742749.496457
 r1
 xCompileXIB
 x/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/FacebookView-iPhone.xib
@@ -1457,7 +1457,7 @@ oCouldn't open shared capabilities memory GSCapabilities (No such file or direct
 oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
 oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
 oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compiling /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/FacebookView-iPhone.xib726b2affd8e7b441^edf364ffd8e7b441^-2016"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)-0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/FacebookView-iPhone.xib0000000000000000^745"CompileXIB RockRadioCas/cs.lproj/FacebookView-iPhone.xib    cd /Users/damekjan74/Desktop/RockRadioCas    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/cs.lproj/FacebookView-iPhone.nib /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/FacebookView-iPhone.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk36"F14EE318-0DAD-4A3D-934D-D52B6692E4BD-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compiling /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/FacebookView-iPhone.xib265262dbe8e7b441^8d7b83dde8e7b441^-2016"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)-0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/FacebookView-iPhone.xib0000000000000000^745"CompileXIB RockRadioCas/cs.lproj/FacebookView-iPhone.xib    cd /Users/damekjan74/Desktop/RockRadioCas    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/cs.lproj/FacebookView-iPhone.nib /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/FacebookView-iPhone.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk36"ABA06A53-1BC1-458C-9740-AD5D274649F0-
 
 CCompileXIB /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/MainWindow-iPhone.xib
 s350742107.573467
@@ -1469,13 +1469,13 @@ oCouldn't open shared capabilities memory GSCapabilities (No such file or direct
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compiling /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/MainWindow-iPhone.xib69e1925be6e7b441^41d6635de6e7b441^-84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)-0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/MainWindow-iPhone.xib0000000000000000^739"CompileXIB RockRadioCas/cs.lproj/MainWindow-iPhone.xib    cd /Users/damekjan74/Desktop/RockRadioCas    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/cs.lproj/MainWindow-iPhone.nib /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/MainWindow-iPhone.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk36"5E6D8D40-AA4E-4160-9021-C67D0E6A3A9D-
 
 CCompileXIB /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/mainView-iPad.xib
-s350742107.572488
-e350742108.946753
+s350742747.384502
+e350742749.554909
 r1
 xCompileXIB
 x/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/mainView-iPad.xib
 oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compiling /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/mainView-iPad.xibedbb925be6e7b441^0475f25ce6e7b441^-84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)-0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/mainView-iPad.xib0000000000000000^727"CompileXIB RockRadioCas/cs.lproj/mainView-iPad.xib    cd /Users/damekjan74/Desktop/RockRadioCas    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/cs.lproj/mainView-iPad.nib /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/mainView-iPad.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk36"871AFE8E-3BB1-4128-A673-4A9FEBC73F9C-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compiling /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/mainView-iPad.xib247d62dbe8e7b441^7fa68edde8e7b441^-84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)-0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/mainView-iPad.xib0000000000000000^727"CompileXIB RockRadioCas/cs.lproj/mainView-iPad.xib    cd /Users/damekjan74/Desktop/RockRadioCas    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/cs.lproj/mainView-iPad.nib /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/cs.lproj/mainView-iPad.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk36"C2F17876-98F2-48DF-85A0-3E7049E9ECA1-
 
 CCompileXIB /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/en.lproj/MainWindow-iPhone.xib
 r0
@@ -2255,13 +2255,13 @@ x/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/Model.xcdatamodeld
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection138"DataModelVersionCompile DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/Model.momd RockRadioCas/Model.xcdatamodeldff5e264cd5e7b441^69e2914cd5e7b441^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/Model.xcdatamodeld/0000000000000000^674"DataModelVersionCompile DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/Model.momd RockRadioCas/Model.xcdatamodeld    cd /Users/damekjan74/Desktop/RockRadioCas    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/momc -XD_MOMC_SDKROOT=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -MOMC_PLATFORMS iphonesimulator -MOMC_PLATFORMS iphoneos /Users/damekjan74/Desktop/RockRadioCas/RockRadioCas/Model.xcdatamodeld /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/Model.momd36"24BED77C-7F01-4E49-B220-1C41C377CB4D-
 
 CGenerateDSYMFile /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYM /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas
-s350741784.485039
-e350741784.842185
+s350742747.150898
+e350742747.214801
 r1
 xGenerateDSYMFile
 x/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYM
 x/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection126"Generating /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYMd53f7c18e5e7b441^b1a5d718e5e7b441^---0#0#0#-19%DVTDocumentLocation2@132"file://localhost/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYM/0000000000000000^624"GenerateDSYMFile DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYM DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas    cd /Users/damekjan74/Desktop/RockRadioCas    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas -o /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYM36"2F42A333-0688-4BE0-9F15-F7345EFE0804-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection126"Generating /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYM01bf26dbe8e7b441^01bf5edbe8e7b441^---0#0#0#-19%DVTDocumentLocation2@132"file://localhost/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYM/0000000000000000^624"GenerateDSYMFile DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYM DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas    cd /Users/damekjan74/Desktop/RockRadioCas    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas -o /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app.dSYM36"09D6E166-AE48-465F-A12E-7B081F7B9B65-
 
 CLd /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app/RockRadioCas normal armv7
 s350741672.279875
@@ -2333,10 +2333,10 @@ x/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermedi
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection229"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas.xcentdba43e07bce6b441^103c4e07bce6b441^---0#0#0#-19%DVTDocumentLocation2@171"file://localhost/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas.xcent0000000000000000^710"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas.xcent    cd /Users/damekjan74/Desktop/RockRadioCas    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist -entitlements -format xml -o /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Intermediates/RockRadioCas.build/Debug-iphoneos/RockRadioCas.build/RockRadioCas.xcent36"0B361DC9-06C1-49FD-9843-8314FF807898-
 
 CTouch /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app
-s350742109.417077
-e350742109.473195
+s350742749.580737
+e350742749.597930
 r1
 xTouch
 x/Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Touch /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app38d96a5de6e7b441^8f33795de6e7b441^---0#0#0#--381"Touch DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app    cd /Users/damekjan74/Desktop/RockRadioCas    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app36"A48F1B84-5D19-4FD6-8D46-15630D8800B5-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Touch /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.appd8ba94dde8e7b441^751e99dde8e7b441^---0#0#0#--381"Touch DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app    cd /Users/damekjan74/Desktop/RockRadioCas    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/damekjan74/Desktop/RockRadioCas/DerivedData/RockRadioCas/Build/Products/Debug-iphoneos/RockRadioCas.app36"20ADAD24-85F5-40EA-98E3-9860D55C0AAE-
 
